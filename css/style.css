@@ -39,6 +39,16 @@ header {
     margin: 0px;*/
 }
 
+nav a{
+    text-transform: capitalize;
+    color: white;
+}
+
+nav a:hover {
+    text-transform: uppercase;
+    color: lightblue;
+}
+
 #header {
     width: 100%;
     background-color: #000;
