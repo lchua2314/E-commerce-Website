@@ -16,8 +16,25 @@
             Fire Sale Emporium
         </div>
         <div id="middle"></div>
-        <div id="login">
-            <a href="#login">Login</a>
+        <div id="loginBox">
+            <form name="loginForm">
+                <div class="login">
+                    <input type="text" placeholder="username" name="userid"><br>
+                    <input type="password" placeholder="password" name="pswrd"><br>
+                    <input type="button" onclick="check(this.form)" value="login"/>
+                </div>
+            </form>
+
+            <script language="javascript">
+                function check(form) {
+                    if (form.userid.value == "dew" && form.pswrd.value == "123") {
+                        window.open("https://www.youtube.com/watch?v=mJa_3IiKxFk");
+                    }
+                    else {
+                        alert("The username and password you entered don't match");
+                    }
+                }
+            </script>
         </div>
         <nav>
             <a href="#store">store</a>
