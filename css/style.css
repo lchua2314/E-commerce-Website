@@ -79,6 +79,10 @@ hr {
     font-family: "Taviraj";
 }
 
+#loginBox span {
+    display: inline;
+}
+
 .login input {
     width: 250px;
     height: 30px;
