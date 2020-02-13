@@ -17,6 +17,10 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+* { /*Box Model changed so that border merges with padding and thickness*/
+    box-sizing: border-box;
+}
+
 html {
     background-color: darkslateblue;
     color: white;
@@ -27,28 +31,85 @@ hr {
     opacity: 0%;
 }
 
-* { /*Box Model changed so that border merges with padding and thickness*/
-    box-sizing: border-box;
+#brandName {
+    box-sizing: content-box;
+    padding: 0px;
+    font-size: 3rem;
+
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 550px;
+    border: 1px solid green;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+#brandName:hover {
+    color: lightblue;
+    letter-spacing: 5px;
+}
+
+#middle {
+    box-sizing: content-box;
+    padding: 0px;
+    font-size: 3rem;
+
+    display: inline-block;
+    position: relative;
+    height: 85px;
+    float: center;
+    width: fit-content;
+    border: 1px solid green;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+#login {
+    text-align: right;
+    float: right;
+    display: inline-block;
+    position: relative;
+    width: 550px;
+    height: 85px;
+    border: 1px solid blue;
+    padding: 0px;
+    margin: 0px auto;
 }
 
 header {
     width: 100%;
-    height: 80px;
+    height: 100%;
     background-color: #000;
     /*padding: 0px; 
     margin: 0px;*/
 }
 
-nav a{
-    text-transform: capitalize;
-    color: white;
+nav {
+    float: center;
+    /*text-align: center; /*Doesn't move hyperlinks to center*/
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    border: 1px solid red;
+    padding: 0px;
+    margin: 0px;
+    
+    text-align: center;
 }
 
-nav a:hover {
+header a{
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: 5px;
+    padding-right: 5px;
+}
+
+header a:hover {
     text-transform: uppercase;
     color: lightblue;
 }
-
+/*
 #header {
     width: 100%;
     background-color: #000;
@@ -61,6 +122,7 @@ nav a:hover {
     left: 0;
     top: 0;
 }
+*/
 
 nav {
     text-align: right;
