@@ -31,6 +31,14 @@ hr {
     opacity: 0%;
 }
 
+header {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    /*padding: 0px; 
+    margin: 0px;*/
+}
+
 #brandName {
     box-sizing: content-box;
     padding: 0px;
@@ -98,12 +106,12 @@ hr {
     font-size: 16px;
     font-weight: 400px;
     padding: 4px;
-    margin: 10px;
+    margin: 7px;
     outline: none;
     transition: 0.25s;
 }
 
-.login input:focus {
+.login input[type = "text"]:focus, .login input[type = "password"]:focus {
     width: 250px;
     background-color: rgb(223, 223, 223);
     border: 2px solid white;
@@ -116,14 +124,6 @@ hr {
     color: black;
 }
 
-header {
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    /*padding: 0px; 
-    margin: 0px;*/
-}
-
 nav {
     float: center;
     /*text-align: center; /*Doesn't move hyperlinks to center*/
@@ -131,7 +131,7 @@ nav {
     position: relative;
     width: 100%;
     border: 1px solid red;
-    padding: 0px;
+    padding-top: 10px;
     margin: 0px;
     
     text-align: center;

@@ -16,17 +16,18 @@
             Fire Sale Emporium
         </div>
         <div id="middle">
-            <span>Hello!</span>
         </div>
         <div id="loginBox">
             <form name="loginForm">
                 <div class="login">
-                    <input type="text" placeholder="Username" name="userid"><br>
+                    <input type="text" placeholder="Username" name="userid" id="userid"><br>
                     <input type="password" placeholder="Password" name="pswrd"><br>
-                    <input type="button" onclick="check(this.form)" value="Login"/>
+                    <input type="button" onclick="check(this.form)" value="Login" id="loginBtn"/>
+                    <div id="usernameDisplay"></div>
                 </div>
             </form>
 
+            <script src="js/script.js"></script>
             <script language="javascript">
                 function check(form) {
                     if (form.userid.value == "dew" && form.pswrd.value == "123") {
@@ -61,7 +62,5 @@
         <p>Footer</p>
         <p>Copyright 2034. All rights unreserved.</p>
     </footer>
-
-    <!--<script src="js/script.js"></script>-->
 </body>
 </html>
