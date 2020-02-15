@@ -124,6 +124,13 @@ header {
     color: black;
 }
 
+.login input[type = "button"]:hover {
+    background-color: rgb(190, 190, 190);
+    border: 2px solid white;
+    color: black;
+    cursor: pointer;
+}
+
 nav {
     float: center;
     /*text-align: center; /*Doesn't move hyperlinks to center*/
@@ -147,6 +154,7 @@ header a{
     letter-spacing: 5px;
     padding: 2px;
     transition: 0.5s;
+    cursor:pointer;
 }
 
 header a:hover {
