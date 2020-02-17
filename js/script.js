@@ -1,17 +1,23 @@
 const sendBtn = document.querySelector('#loginBtn');
-const messageIn = document.querySelector('#userid');
-const messageOut = document.querySelector('#usernameDisplay');
+const usernameIn = document.querySelector('#userid');
+const usernameOut = document.querySelector('#usernameDisplay');
+const passwordInfo = document.querySelector('#pswrd');
 
 sendBtn.addEventListener('click', sendMsg);
 
 function sendMsg () {
-    let content = 'Hello, ' + messageIn.value + '!';
+    let content = 'Hello, ' + usernameIn.value + '!';
+    let content2 = passwordInfo.value;
     //console.log(content);
-    if (content === '') {
-        alert('Please Enter Valid Value. Current Value is Empty.');
+    if (content === 'Hello, !') {
+        alert('Please enter a username.');
+    }
+    else if (content2.length < 8){
+        alert('Please enter a password that is at least 8 character long.');
     }
     else {
-        messageOut.innerHTML = content;
-        messageIn.value = '';
+        usernameOut.innerHTML = content;
+        usernameIn.value = '';
+        passwordInfo.value = '';
     }
 }
