@@ -61,7 +61,7 @@ header {
     letter-spacing: 5px;
 }
 
-#middle {
+.searchBar {
     box-sizing: content-box;
     padding: 0px;
     font-size: 3rem;
@@ -93,7 +93,7 @@ header {
     display: inline;
 }
 
-.login input {
+input {
     width: 200px;
     height: 30px;
     background: transparent;
@@ -111,14 +111,14 @@ header {
     transition: 0.25s;
 }
 
-.login input[type = "text"]:focus, .login input[type = "password"]:focus {
+input[type = "text"]:focus, .login input[type = "password"]:focus {
     width: 250px;
     background-color: rgb(223, 223, 223);
     border: 2px solid white;
     color: black;
 }
 
-.login input:hover {
+input:hover {
     background-color: rgb(190, 190, 190);
     border: 2px solid white;
     color: black;
