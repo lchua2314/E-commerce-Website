@@ -49,6 +49,7 @@ header {
     position: relative;
     float: left;
     width: 550px;
+    height: 150px;
     border: 1px solid green;
     padding: 0px;
     margin: 0px auto;
@@ -68,7 +69,7 @@ header {
 
     display: inline-block;
     position: relative;
-    height: 85px;
+    height: 150px;
     float: center;
     width: fit-content;
     border: 1px solid green;
