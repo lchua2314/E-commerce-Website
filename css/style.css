@@ -71,10 +71,14 @@ header {
     position: relative;
     height: 150px;
     float: center;
-    width: 405px;
+    width: 390px;
     border: 1px solid green;
     padding: 0px;
     margin: 0px auto;
+}
+
+.searchBar a {
+    color: red;
 }
 
 #loginBox {
@@ -153,9 +157,10 @@ header a{
     text-decoration: none;
     color: white;
     letter-spacing: 5px;
-    padding: 2px;
+    padding: 0px 5px;
+    margin: 0px 10px;
     transition: 0.5s;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 header a:hover {
@@ -163,7 +168,7 @@ header a:hover {
     border: 3px solid white;
     color: black;
     padding: 5px;
-    border-radius: 24px;
+    border-radius: 10px;
 }
 /*
 #header {
