@@ -78,7 +78,18 @@ header {
 }
 
 .searchBar a {
-    color: red;
+    box-sizing: content-box;
+    padding: 0px;
+    font-size: 3rem;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    height: 5px;
+    float: center;
+    width: 390px;
+    border: 1px solid green;
+    padding: 0px;
+    margin: 0px auto;
 }
 
 #loginBox {
