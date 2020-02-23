@@ -173,42 +173,54 @@ header a:hover {
 table {
     height: 40%;
     left: 10%;
-    margin: 20px auto;
+    margin: 10px auto;
     overflow-y: scroll;
     position: static;
     width: 80%;
+    border-spacing: 75px;
+    border-collapse: separate;
 }
 
 thead th {
-    background: #88CCF1;
     color: #FFF;
-    font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 100;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
 }
 
 tr {
     background: #f4f7f8;
-    border-bottom: 1px solid #FFF;
-    margin-bottom: 5px;
+    border-bottom: 1px solid #FFF; /*Does not show*/
+    margin-bottom: 5px; /*Does not show*/
 }
 
 th, td {
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 20px;
-    text-align: left;
+    /* font-family: 'Lato', sans-serif; */
+    font-size: 18px; /*No differ*/
+    font-weight: 400; /*No differ*/
+    padding: 100px;
+    text-align: center;
     width: 33.3333%;
+    border: 2px solid white;
+    background: black;
+    border-radius: 24px;
+    transition-delay: 0.25s;
 }
 
-.rowOne {
+td:hover {
+    background-color: darkblue;
+    border: 5px solid rgb(196, 196, 196);
+    color: rgb(196, 196, 196);
+    padding: 100px;
+    border-radius: 28px;
+}
+
+/* .rowOne {
     display: table;
     table-layout: fixed; 
     width: 100%;
-    /* border: 1px solid white; */
 }
 
 .rowOne #box {
@@ -220,7 +232,7 @@ th, td {
     margin: 0px 100px;
     padding: 150px 150px;
     background-color: black;
-}
+} */
 
 footer {
     text-align: end;
