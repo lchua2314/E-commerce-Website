@@ -170,6 +170,10 @@ header a:hover {
     border-radius: 10px;
 }
 
+table {
+    height:40%;
+}
+
 .rowOne {
     display: table;
     table-layout: fixed; 
