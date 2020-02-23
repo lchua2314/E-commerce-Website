@@ -188,13 +188,6 @@ header a:hover {
     background-color: black;
 }
 
-.rowOne #box1 {
-    border: 3px solid red;
-    background-color: green;
-    width: 100px;
-    height: 100px;
-}
-
 footer {
     text-align: end;
 }
