@@ -22,7 +22,7 @@
         <div id="loginBox">
             <form name="loginForm" action="index.html" method="post">
                 <div class="login">
-                    <input type="text" placeholder="Username" name="userid" id="userid"><br>
+                    <input type="text" placeholder="Username" name="userid" id="userid" pattern="[a-zA-Z0-9]+" required><br>
                     <input type="password" placeholder="Password" name="pswrd" id="pswrd"><br>
                     <input type="button" onclick="check(this.form)" value="Login" id="loginBtn"/>
                     <div id="usernameDisplay"></div>
