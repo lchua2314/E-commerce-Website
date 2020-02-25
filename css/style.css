@@ -138,7 +138,7 @@ nav {
     position: relative;
     width: 100%;
     border: 1px solid red;
-    padding-top: 10px;
+    padding: 10px 0px;
     margin: 0px;
     text-align: center;
 }
