@@ -186,11 +186,12 @@ h2:hover {
 
 table {
     height: 40%;
+    width: 100%;
     left: 10%;
-    margin: 0px auto;
+    right: 10%;
+    margin: auto auto;
     overflow-y: scroll;
     position: static;
-    width: 80%;
     border-spacing: 75px;
     border-collapse: separate;
 }
