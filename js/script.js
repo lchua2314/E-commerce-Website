@@ -9,7 +9,7 @@ sendBtn.addEventListener('click', sendMsg);
 formJS.addEventListener('submit', (event) => { 
     event.preventDefault();
     console.log('form submitted!');
-})
+});
 
 function sendMsg () {
     let content = 'Hello, ' + usernameIn.value + '!';
