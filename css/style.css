@@ -249,6 +249,24 @@ td:hover {
     background-color: black;
 } */
 
+.grid {
+    border: 2px blue solid;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; /*added*/
+    /* grid-template-rows: 100%; added */
+    grid-row-gap: 50px;
+    /* grid-column-gap: 50px; */
+}
+
+.box {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 2px white solid;
+}
+
 footer {
     text-align: end;
 }
