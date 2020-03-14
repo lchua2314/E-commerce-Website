@@ -250,15 +250,17 @@ td:hover {
 } */
 
 .grid {
-    border: 2px yellow solid;
+    /*Grid CSS can resize when window shortens*/
+    /* border: 2px yellow solid; */
     width: 100%;
     height: 500px;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 50px;
     grid-auto-flow: row;
     /* grid-template-rows: 100%; added */
     grid-column-gap: 5%;
+    flex: auto;
 }
 
 .box {
@@ -278,7 +280,6 @@ td:hover {
     background: black;
     border-radius: 24px;
     transition-delay: 0.25s;
-    margin-left: 20%;
 }
 
 .box:hover {
