@@ -22,7 +22,7 @@
 }
 
 html {
-    background-color: darkslateblue;
+    background-color: rgb(36, 36, 36); /*Changed*/
     color: white;
     font-family: "Taviraj";
 }
@@ -88,7 +88,7 @@ header {
     position: relative;
     width: 33%;
     height: 150px;
-    border: 1px solid blue;
+    border: 1px solid red;
     padding: 0px;
     margin: 0px auto;
     font-family: "Taviraj";
@@ -101,7 +101,7 @@ input {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 24px;
     color: white;
-    background-color: darkblue;
+    background-color: black; /*Changed*/
     text-align: center;
     font-family: "Taviraj";
     font-size: 16px;
@@ -114,22 +114,23 @@ input {
 
 input[type = "text"]:focus, input[type = "password"]:focus {
     width: 250px;
-    background-color: rgb(223, 223, 223);
-    border: 2px solid white;
+    background-color: rgb(216, 216, 216);
+    border: 2px solid rgb(190, 190, 190);
     color: black;
 }
 
 input:hover {
-    background-color: rgb(190, 190, 190);
-    border: 2px solid white;
+    background-color: rgb(216, 216, 216);
+    border: 2px solid rgb(190, 190, 190);
     color: black;
 }
 
 input[type = "button"]:hover {
-    background-color: rgb(190, 190, 190);
-    border: 2px solid white;
+    background-color: rgb(216, 216, 216);
+    border: 2px solid rgb(190, 190, 190);
     color: black;
     cursor: pointer;
+    letter-spacing: 5px;
 }
 
 nav {
@@ -145,7 +146,7 @@ nav {
 }
 
 header a{
-    background-color: darkblue;
+    background-color: black; /*Changed*/
     border: 2px solid rgb(190, 190, 190);
     border-radius: 24px;
     text-transform: capitalize;
@@ -160,11 +161,12 @@ header a{
 }
 
 header a:hover {
-    background-color: rgb(196, 196, 196);
-    border: 3px solid white;
+    background-color: rgb(216, 216, 216);
+    border: 3px solid rgb(190, 190, 190);
     color: black;
     padding: 5px;
     border-radius: 10px;
+    letter-spacing: 10px;
 }
 
 /* main */
@@ -225,9 +227,9 @@ th, td {
 }
 
 td:hover {
-    background-color: darkblue;
-    border: 5px solid white;
-    color: rgb(196, 196, 196);
+    background-color: rgb(216, 216, 216); /*Changed*/
+    border: 5px solid rgb(190, 190, 190);
+    color: black;
     padding: 100px;
     border-radius: 28px;
 }
@@ -252,7 +254,8 @@ td:hover {
 .grid {
     /*Grid CSS can resize when window shortens*/
     /* border: 2px yellow solid; */
-    width: 100%;
+    width: 80%;
+    margin: auto; /* Centered the grid */
     height: 500px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -283,9 +286,9 @@ td:hover {
 }
 
 .box:hover {
-    background-color: darkblue;
-    border: 5px solid white;
-    color: rgb(196, 196, 196);
+    background-color: rgb(216, 216, 216); /*Changed*/
+    border: 5px solid rgb(190, 190, 190);
+    color: black;
     border-radius: 28px;
 }
 
