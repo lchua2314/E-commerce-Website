@@ -292,6 +292,9 @@ td:hover {
     border: 5px solid rgb(190, 190, 190);
     color: black;
     border-radius: 28px;
+    padding: 20%;
+    font-weight: 800;
+    font-size: 22px;
 }
 
 footer {
