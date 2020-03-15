@@ -187,15 +187,9 @@ h2:hover {
 }
 
 table {
-    height: 40%;
-    width: 100%;
-    left: 10%;
-    right: 10%;
-    margin: auto auto;
-    overflow-y: scroll;
-    position: static;
+    /* margin: auto auto; */
     border-spacing: 75px;
-    border-collapse: separate;
+    flex: auto;
 }
 
 thead th {
