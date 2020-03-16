@@ -295,6 +295,7 @@ footer {
     border: 2px solid rgb(175, 175, 175);
     /*padding: 0px; 
     margin: 0px;*/
+    text-align: center;
 }
 
 .left_footer {
@@ -314,6 +315,11 @@ footer {
     transition: 0.25s;
 }
 
+.left_footer:hover {
+    color: red;
+    letter-spacing: 5px;
+}
+
 .center_footer {
     box-sizing: content-box;
     font-size: 3rem;
@@ -331,6 +337,11 @@ footer {
     transition: 0.25s;
 }
 
+.center_footer:hover {
+    color: red;
+    letter-spacing: 5px;
+}
+
 .right_footer {
     box-sizing: content-box;
     font-size: 3rem;
@@ -346,4 +357,9 @@ footer {
     margin: 0px auto;
 
     transition: 0.25s;
+}
+
+.right_footer:hover {
+    color: red;
+    letter-spacing: 5px;
 }
