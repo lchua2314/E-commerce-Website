@@ -296,3 +296,54 @@ footer {
     /*padding: 0px; 
     margin: 0px;*/
 }
+
+.left_footer {
+    box-sizing: content-box;
+    font-size: 3rem;
+    text-align: center;
+
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 33%;
+    height: 150px;
+    border: 1px solid green;
+    padding: 0px;
+    margin: 0px auto;
+
+    transition: 0.25s;
+}
+
+.center_footer {
+    box-sizing: content-box;
+    font-size: 3rem;
+    text-align: center;
+
+    display: inline-block;
+    position: relative;
+    float: center;
+    width: 33%;
+    height: 150px;
+    border: 1px solid red;
+    padding: 0px;
+    margin: 0px auto;
+
+    transition: 0.25s;
+}
+
+.right_footer {
+    box-sizing: content-box;
+    font-size: 3rem;
+    text-align: center;
+
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 33%;
+    height: 150px;
+    border: 1px solid blue;
+    padding: 0px;
+    margin: 0px auto;
+
+    transition: 0.25s;
+}
