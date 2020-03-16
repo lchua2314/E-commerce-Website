@@ -289,4 +289,10 @@ td:hover {
 
 footer {
     text-align: end;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border: 2px solid rgb(175, 175, 175);
+    /*padding: 0px; 
+    margin: 0px;*/
 }
