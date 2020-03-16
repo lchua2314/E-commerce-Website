@@ -22,7 +22,7 @@
 }
 
 html {
-    background-color: rgb(184, 0, 0); /*Changed*/
+    background-color: darkblue; /*Changed*/
     color: white;
     font-family: "Taviraj";
 }
@@ -101,7 +101,7 @@ input {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 24px;
     color: white;
-    background-color: black; /*Changed*/
+    background-color: darkblue; /*Changed*/
     text-align: center;
     font-family: "Taviraj";
     font-size: 16px;
@@ -122,7 +122,6 @@ input[type = "text"]:focus, input[type = "password"]:focus {
 input:hover {
     background-color: rgb(216, 216, 216);
     border: 2px solid rgb(190, 190, 190);
-    color: black;
 }
 
 input[type = "button"]:hover {
@@ -146,7 +145,7 @@ nav {
 }
 
 header a{
-    background-color: black; /*Changed*/
+    background-color: darkblue; /*Changed*/
     border: 2px solid rgb(190, 190, 190);
     border-radius: 24px;
     text-transform: capitalize;
