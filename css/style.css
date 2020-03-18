@@ -363,3 +363,13 @@ footer {
     color: red;
     letter-spacing: 5px;
 }
+
+.copyright {
+    transition: 0.25s;
+}
+
+.copyright:hover {
+    color: lightblue;
+    letter-spacing: 5px;
+    border: 1px solid blue;
+}
