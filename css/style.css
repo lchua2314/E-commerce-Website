@@ -246,7 +246,7 @@ td:hover {
     /* border: 2px yellow solid; */
     width: 90%;
     height: 500px;
-    margin: 100px auto; /*second auto centers the grid*/
+    margin: 100px auto 0px auto; /*second auto centers the grid*/
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
     grid-row-gap: 50px;
