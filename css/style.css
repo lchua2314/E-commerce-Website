@@ -132,6 +132,14 @@ input[type = "button"]:hover {
     letter-spacing: 5px;
 }
 
+input[type = "button"]:focus {
+    /* width: 250px; */
+    background-color: rgb(216, 216, 216);
+    border: 2px solid rgb(190, 190, 190);
+    color: black;
+    letter-spacing: 5px;
+}
+
 nav {
     float: center;
     /*text-align: center; /*Doesn't move hyperlinks to center*/
