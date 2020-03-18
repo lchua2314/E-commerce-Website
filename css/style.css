@@ -176,6 +176,15 @@ header a:hover {
     letter-spacing: 10px;
 }
 
+header a:focus {
+    background-color: rgb(216, 216, 216);
+    border: 3px solid rgb(190, 190, 190);
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    letter-spacing: 10px;
+}
+
 /* main */
 
 h2 {
