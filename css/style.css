@@ -305,21 +305,22 @@ td:hover {
 }
 
 .slider {
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('img/background.jpg')center/cover 
-    no-repeat;
+    /* background: url('img/background.jpg')center/cover 
+    no-repeat; */
 }
 
 .images {
     /* background: yellow; */
     flex: 0 0 80%; /*width is 80%*/
     min-height: 70vh;
-    background: url('img/bcg-0.jpeg')center/cover
+    background: url('img/bcg-0.jpg')center/cover
     no-repeat;
     border-radius: 15px;
+    border: 5px solid white;
     box-shadow: 5px 10px black;
     position: relative;
 }
@@ -334,6 +335,7 @@ td:hover {
     border-radius: 20%;
     box-shadow: 2px 5px black;
     outline: none;
+    transition: 0.25s;
 }
 
 .prevBtn {
@@ -358,6 +360,9 @@ td:hover {
 .btn:hover {
     background: rgb(216, 216, 216);
     color: black;
+    border: 5px solid white;
+    padding: 0.7rem;
+    letter-spacing: 5px;
 }
 
 footer {
