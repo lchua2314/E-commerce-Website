@@ -320,9 +320,19 @@ td:hover {
     background: url('img/bcg-0.jpg')center/cover
     no-repeat;
     border-radius: 15px;
-    border: 5px solid white;
+    border: 5px solid rgb(196, 196, 196);
     box-shadow: 5px 10px black;
     position: relative;
+    transition: 0.25s;
+}
+
+.images:hover {
+    background: url('img/bcg-0.jpg'); 
+    /* color: black; no text*/
+    border: 10px solid rgb(190, 190, 190);
+    padding: 1rem;
+    box-shadow: 10px 15px black;
+    /* letter-spacing: 5px; There are no letters */
 }
 
 .btn {
@@ -363,6 +373,7 @@ td:hover {
     border: 5px solid white;
     padding: 0.7rem;
     letter-spacing: 5px;
+    box-shadow: 5px 10px black;
 }
 
 footer {
