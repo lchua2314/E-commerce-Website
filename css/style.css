@@ -154,7 +154,7 @@ nav {
 
 header a{
     background-color: darkblue; /*Changed*/
-    border: 2px solid rgb(190, 190, 190);
+    border: 2px solid white;
     border-radius: 24px;
     text-transform: capitalize;
     text-decoration: none;
@@ -201,62 +201,6 @@ h2:hover {
     color: red;
     letter-spacing: 20px;
 }
-
-table {
-    margin: auto auto;
-    border-spacing: 75px;
-    flex: auto;
-}
-
-thead th {
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 2px;
-}
-
-tr {
-    /* background: #f4f7f8; */
-    /* border-bottom: 1px solid #FFF; /* Does not show
-    margin-bottom: 5px; Does not show */
-}
-
-th, td {
-    /* font-family: 'Lato', sans-serif; */
-    font-size: 18px; /*No differ*/
-    font-weight: 400; /*No differ*/
-    padding: 100px;
-    text-align: center;
-    /* width: 33.3333%; */
-    border: 2px solid rgb(196, 196, 196);
-    background: black;
-    border-radius: 24px;
-    transition-delay: 0.25s;
-}
-
-td:hover {
-    background-color: rgb(216, 216, 216); /*Changed*/
-    border: 5px solid rgb(190, 190, 190);
-    color: black;
-    border-radius: 28px;
-}
-
-/* .rowOne {
-    display: table;
-    table-layout: fixed; 
-    width: 100%;
-}
-
-.rowOne #box {
-    border: 5px solid white;
-    display: inline-block;
-    border-radius: 24px;
-    display: table-cell;
-    text-align: center;
-    margin: 0px 100px;
-    padding: 150px 150px;
-    background-color: black;
-} */
 
 .grid {
     /*Grid CSS can resize when window shortens*/
