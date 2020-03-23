@@ -185,6 +185,10 @@ header a:focus {
     letter-spacing: 10px;
 }
 
+header a:active {
+    background-color: rgb(255, 255, 255);
+}
+
 /* main */
 
 h2 {
@@ -305,11 +309,6 @@ h2:hover {
     transform: translate(-75%, -50%);
 }
 
-.btn:active {
-    background: grey;
-    box-shadow: 1px 1px grey;
-}
-
 .btn:hover {
     background: rgb(216, 216, 216);
     color: black;
@@ -318,6 +317,13 @@ h2:hover {
     letter-spacing: 5px;
     box-shadow: 5px 10px black;
 }
+
+.btn:active {
+    background: rgb(194, 194, 194);
+    box-shadow: 1px 1px grey;
+}
+
+/* Footer */
 
 footer {
     text-align: end;
@@ -339,7 +345,7 @@ footer {
     position: relative;
     float: left;
     width: 33%;
-    height:  80%;
+    height: 80%;
     border: 1px solid green;
     padding: 0px;
     margin: 0px auto;
