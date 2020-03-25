@@ -140,6 +140,11 @@ input[type = "button"]:focus {
     letter-spacing: 5px;
 }
 
+input[type = "button"]:active {
+    background-color: rgb(160, 160, 160);
+    border: 4px solid rgb(255, 255, 255);
+}
+
 nav {
     float: center;
     /*text-align: center; /*Doesn't move hyperlinks to center*/
