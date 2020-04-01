@@ -256,6 +256,26 @@ h2:hover {
     font-size: 22px;
 }
 
+.img {
+    /* background: yellow; */
+    flex: 0 0 80%; /*width is 80%*/
+    min-height: 70vh;
+    background: url('img/bcg-0.jpg');
+    border-radius: 15px;
+    border: 5px solid rgb(196, 196, 196);
+    box-shadow: 5px 10px black;
+    position: relative;
+    transition: 0.5s;
+}
+
+/* .img:hover {
+    background: url('img/bcg-0.jpg')center/cover
+    no-repeat;
+    border: 10px solid rgb(190, 190, 190);
+    padding: 1rem;
+    box-shadow: 10px 15px black;
+} */
+
 .slider {
     min-height: 85vh;
     display: flex;
@@ -270,7 +290,7 @@ h2:hover {
     /* background: yellow; */
     flex: 0 0 80%; /*width is 80%*/
     min-height: 70vh;
-    background: url('img/bcg-0.jpg');
+    /* background: url('img/bcg-0.jpg'); */
     border-radius: 15px;
     border: 5px solid rgb(196, 196, 196);
     box-shadow: 5px 10px black;
