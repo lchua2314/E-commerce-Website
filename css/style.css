@@ -297,6 +297,7 @@ h2:hover {
 
 .images {
     /* background: yellow; */
+    max-width: fit-content;
     flex: 0 0 80%; /*width is 80%*/
     min-height: 80vh;
     background: url('img/bcg-0.jpg');
