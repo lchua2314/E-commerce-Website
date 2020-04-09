@@ -389,6 +389,7 @@ h2:hover {
     padding: 0.7rem;
     letter-spacing: 5px;
     box-shadow: 5px 10px black;
+    cursor: pointer;
 }
 
 .btn:active {
