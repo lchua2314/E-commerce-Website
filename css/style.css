@@ -210,6 +210,43 @@ h2:hover {
     letter-spacing: 20px;
 }
 
+#hot a, #electronics a{
+    background-color: darkblue; /*Changed*/
+    border: 2px solid white;
+    border-radius: 24px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 5px;
+    padding: 0px 5px;
+    margin: 0px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+#hot a, #electronics a:hover {
+    background-color: rgb(216, 216, 216);
+    border: 3px solid rgb(190, 190, 190);
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    letter-spacing: 10px;
+}
+
+#hot a, #electronics a:focus {
+    background-color: rgb(216, 216, 216);
+    border: 3px solid rgb(190, 190, 190);
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    letter-spacing: 10px;
+}
+
+#hot a, #electronics a:active {
+    background-color: rgb(255, 255, 255);
+}
+
 .grid {
     /*Grid CSS can resize when window shortens*/
     /* border: 2px yellow solid; */
