@@ -250,6 +250,16 @@ h2:hover {
     background-color: rgb(255, 255, 255);
 } */
 
+
+/* Reworked grid hyperlinks */
+#hot a, #electronics a {
+    color: rgb(0, 102, 255);
+}
+
+#hot a:hover, #electronics a:hover {
+    color: darkblue;
+}
+
 .grid {
     /*Grid CSS can resize when window shortens*/
     /* border: 2px yellow solid; */
