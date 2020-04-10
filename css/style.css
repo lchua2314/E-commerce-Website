@@ -210,8 +210,11 @@ h2:hover {
     letter-spacing: 20px;
 }
 
+/* Commented out hyoerink grid styles bc of bugs */
+
+/*
 #hot a, #electronics a{
-    background-color: darkblue; /*Changed*/
+    background-color: darkblue;
     border: 2px solid white;
     border-radius: 24px;
     text-transform: capitalize;
@@ -245,7 +248,7 @@ h2:hover {
 
 #hot a, #electronics a:active {
     background-color: rgb(255, 255, 255);
-}
+} */
 
 .grid {
     /*Grid CSS can resize when window shortens*/
