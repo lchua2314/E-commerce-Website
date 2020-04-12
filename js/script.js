@@ -12,6 +12,17 @@ formJS.addEventListener('submit', (event) => {
     console.log('form submitted!');
 });
 
+//Login info usage
+//Code is insecure, but it is here just to test the login.
+function check(form) {
+    if (form.userid.value == "dew" && form.pswrd.value == "123") {
+        window.open("https://www.youtube.com/watch?v=mJa_3IiKxFk");
+    }
+    else {
+        alert("The username and password you entered don't match");
+    }
+}
+
 function sendMsg () {
     let content = 'Hello, ' + usernameIn.value + '!';
     let content2 = passwordInfo.value;
