@@ -254,10 +254,12 @@ h2:hover {
 /* Reworked grid hyperlinks */
 #hot a, #electronics a {
     color: rgb(0, 102, 255);
+    letter-spacing: 5px;
 }
 
 #hot a:hover, #electronics a:hover {
     color: darkblue;
+    letter-spacing: 0px;
 }
 
 .grid {
