@@ -202,54 +202,12 @@ h2 {
     transition: 0.5s;
     padding: 5px;
     letter-spacing: 10px;
-    /* font-size: 1.5rem < - This is default */
 }
 
 h2:hover {
     color: red;
     letter-spacing: 20px;
 }
-
-/* Commented out hyoerink grid styles bc of bugs */
-
-/*
-#hot a, #electronics a{
-    background-color: darkblue;
-    border: 2px solid white;
-    border-radius: 24px;
-    text-transform: capitalize;
-    text-decoration: none;
-    color: white;
-    letter-spacing: 5px;
-    padding: 0px 5px;
-    margin: 0px 10px;
-    transition: 0.5s;
-    cursor: pointer;
-    outline: none;
-}
-
-#hot a, #electronics a:hover {
-    background-color: rgb(216, 216, 216);
-    border: 3px solid rgb(190, 190, 190);
-    color: black;
-    padding: 5px;
-    border-radius: 10px;
-    letter-spacing: 10px;
-}
-
-#hot a, #electronics a:focus {
-    background-color: rgb(216, 216, 216);
-    border: 3px solid rgb(190, 190, 190);
-    color: black;
-    padding: 5px;
-    border-radius: 10px;
-    letter-spacing: 10px;
-}
-
-#hot a, #electronics a:active {
-    background-color: rgb(255, 255, 255);
-} */
-
 
 /* Reworked grid hyperlinks */
 #hot a, #electronics a {
@@ -289,14 +247,6 @@ h2:hover {
     transition: 0.5s;
 }
 
-/* .img:hover {
-    background: url('img/bcg-0.jpg')center/cover
-    no-repeat;
-    border: 10px solid rgb(190, 190, 190);
-    padding: 1rem;
-    box-shadow: 10px 15px black;
-} */
-
 .box {
     /* background-color: black;
     color: white;
@@ -330,28 +280,15 @@ h2:hover {
     font-size: 22px;
 }
 
-/*.box {
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; /*Makes the buttons move down to the correct y axis on the page*/
-    /* background: url('img/background.jpg')center/cover 
-    no-repeat; 
-}*/
-
 .slider {
     min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative; /*Makes the buttons move down to the correct y axis on the page*/
-    /* background: url('img/background.jpg')center/cover 
-    no-repeat; */
 }
 
 .images {
-    /* background: yellow; */
     flex: 0 0 80%; /*width is 80%*/
     min-height: 80vh;
     background: url('img/bcg-0.jpg');
@@ -420,8 +357,6 @@ footer {
     height: 400px;
     background-color: #000;
     border: 2px solid rgb(175, 175, 175);
-    /*padding: 0px; 
-    margin: 0px;*/
     text-align: center;
 }
 
@@ -437,7 +372,6 @@ footer i.fab, i.fas {
 
 .left_footer {
     box-sizing: content-box;
-    /* font-size: 3rem; */
     text-align: center;
 
     display: inline-block;
@@ -459,7 +393,6 @@ footer i.fab, i.fas {
 
 .center_footer {
     box-sizing: content-box;
-    /* font-size: 3rem; */
     text-align: center;
 
     display: inline-block;
@@ -481,7 +414,6 @@ footer i.fab, i.fas {
 
 .right_footer {
     box-sizing: content-box;
-    /* font-size: 3rem; */
     text-align: center;
 
     display: inline-block;
