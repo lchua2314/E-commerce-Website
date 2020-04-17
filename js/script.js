@@ -1,4 +1,4 @@
-//Login
+//Login Interaction
 const sendBtn = document.querySelector('#loginBtn');
 const usernameIn = document.querySelector('#userid');
 const usernameOut = document.querySelector('#usernameDisplay');
