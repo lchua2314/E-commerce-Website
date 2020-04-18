@@ -212,12 +212,13 @@ h2:hover {
 /* Reworked grid hyperlinks */
 #hot a, #electronics a {
     color: rgb(0, 102, 255);
-    letter-spacing: 5px;
+    /* Letter-spacing makes the height collide with the next part of the website */
+    /* letter-spacing: 5px; */
 }
 
 #hot a:hover, #electronics a:hover {
     color: darkblue;
-    letter-spacing: 0px;
+    /* letter-spacing: 0px; */
 }
 
 .grid {
@@ -274,7 +275,8 @@ h2:hover {
     border-radius: 28px;
     padding: 20%;
     font-weight: 800;
-    font-size: 22px;
+    /* Makes height of grid box collide with height when hovered. */
+    /* font-size: 22px; */
 }
 
 .slider {
