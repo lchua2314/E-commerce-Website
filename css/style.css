@@ -61,11 +61,12 @@ header {
     padding: 0px;
     margin: 0px auto;
     transition: 0.5s;
-    color: red;
+    /* color: red; */
 }
 
 #brandName:hover {
-   color: lightblue;
+   /* color: lightblue; */
+    color: red;
     letter-spacing: 5px;
 }
 
