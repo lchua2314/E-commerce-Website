@@ -25,8 +25,12 @@
 
 html {
     background-color: darkblue;
-    color: white;
+    color: rgb(209, 209, 209);
     font-family: "Taviraj";
+}
+
+html:hover {
+    color: lightblue;
 }
 
 hr { 
@@ -57,10 +61,11 @@ header {
     padding: 0px;
     margin: 0px auto;
     transition: 0.5s;
+    color: red;
 }
 
 #brandName:hover {
-    color: red;
+   color: lightblue;
     letter-spacing: 5px;
 }
 
