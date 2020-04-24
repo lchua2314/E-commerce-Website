@@ -1,154 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <!--Taken from Google Fonts:
     <link href="https://fonts.googleapis.com/css?family=Taviraj:400,400i&display=swap" rel="stylesheet">-->
     <!-- Icons used from Font Awesome -->
-    <script src="https://kit.fontawesome.com/c057664144.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c057664144.js"
+      crossorigin="anonymous"
+    ></script>
     <!--Cannot add Font Awesome icon in the title-->
     <title>Fire Sale Emporium</title>
+  </head>
 
-</head>
-
-
-
-<body>
-
+  <body>
     <header>
+      <div id="brandName">
+        <i class="fas fa-fire"></i> <br />
+        Fire Sale Emporium
+      </div>
+      <div class="searchBar">
+        <form name="searchBarForm" action="index.html" method="post">
+          <input
+            type="text"
+            name="searchText"
+            class="search-txt"
+            placeholder="Type to search"
+          /><br />
+          <input type="button" onclick="" value="Search" id="searchBtn" />
+        </form>
+      </div>
 
-        <div id="brandName"><i class="fas fa-fire"></i> <br>
-            Fire Sale Emporium
-        </div>
-        <div class="searchBar">
-            <form name="searchBarForm" action="index.html" method="post">
-                <input type="text" name="searchText" class="search-txt" placeholder="Type to search"/><br>
-                <input type="button" onclick="" value="Search" id="searchBtn"/>
-            </form>
-        </div>
+      <div id="loginBox">
+        <form name="loginForm" action="index.html" method="post">
+          <input
+            type="text"
+            placeholder="Username"
+            name="userid"
+            id="userid"
+            pattern="[a-zA-Z0-9]+"
+            required
+          /><br />
+          <input
+            type="password"
+            placeholder="Password"
+            name="pswrd"
+            id="pswrd"
+          /><br />
+          <input
+            type="button"
+            onclick="check(this.form)"
+            value="Login"
+            id="loginBtn"
+          />
+          <div id="usernameDisplay"></div>
+        </form>
+      </div>
 
-        <div id="loginBox">
-            <form name="loginForm" action="index.html" method="post">
-                <input type="text" placeholder="Username" name="userid" id="userid" pattern="[a-zA-Z0-9]+" required><br>
-                <input type="password" placeholder="Password" name="pswrd" id="pswrd"><br>
-                <input type="button" onclick="check(this.form)" value="Login" id="loginBtn"/>
-                <div id="usernameDisplay"></div>
-            </form>
-        </div>
-
-        <nav>
-            <!-- <a href="#dropdown">Add drop down button here</a> <br> <br> Add this later? -->
-            <a href="#home"><i class="fas fa-home"></i> home</a>
-            <a href="#store"><i class="fas fa-store"></i> store</a>
-            <a href="#footer"><i class="far fa-question-circle"></i> support</a>
-            <a href="#hot"><i class="fab fa-hotjar"></i> hot</a>
-            <a href="#new"><i class="fas fa-exclamation-circle"></i> new</a> <br> <br>
-            <a href="#shoes"><i class="fas fa-shoe-prints"></i> shoes</a>
-            <a href="#books"><i class="fas fa-book"></i> books</a>
-            <a href="#cooking"><i class="fas fa-utensils"></i> cooking</a>
-            <a href="#cart"><i class="fas fa-cart-plus"></i> cart</a>
-            <a href="#electronics"><i class="fas fa-laptop"></i> electronics</a>
-        </nav>         
-
+      <nav>
+        <!-- <a href="#dropdown">Add drop down button here</a> <br> <br> Add this later? -->
+        <a href="#home"><i class="fas fa-home"></i> home</a>
+        <a href="#store"><i class="fas fa-store"></i> store</a>
+        <a href="#footer"><i class="far fa-question-circle"></i> support</a>
+        <a href="#hot"><i class="fab fa-hotjar"></i> hot</a>
+        <a href="#new"><i class="fas fa-exclamation-circle"></i> new</a> <br />
+        <br />
+        <a href="#shoes"><i class="fas fa-shoe-prints"></i> shoes</a>
+        <a href="#books"><i class="fas fa-book"></i> books</a>
+        <a href="#cooking"><i class="fas fa-utensils"></i> cooking</a>
+        <a href="#cart"><i class="fas fa-cart-plus"></i> cart</a>
+        <a href="#electronics"><i class="fas fa-laptop"></i> electronics</a>
+      </nav>
     </header>
 
-
-
     <main>
-
-    <div id="hot">
-        <h2><i class="fas fa-fire-alt"></i> Daily Hot Deals <i class="fas fa-fire-alt"></i></h2>
+      <div id="hot">
+        <h2>
+          <i class="fas fa-fire-alt"></i> Daily Hot Deals
+          <i class="fas fa-fire-alt"></i>
+        </h2>
         <div class="grid">
-            <div class="box a"><a href="#huntington_shoes">Huntington Shoes</a><br>Nice and comfortable.</div>
-            <div class="box b"><a href="#jackie_junk">Jackie Junk</a><br>Buy Jackie's trash today!</div>
-            <div class="box c"><a href="#optimized_e-pods">Optimized E-Pods</a><br>Wireless!</div>
-            <div class="box d"><a href="#recycled_games:_the_warfare">Recycled Games: The Warfare</a><br>Same game, different year!</div>
-            <div class="box e"><a href="#bandwagon_bag">Bandwagon Bag</a><br>Your friends have it!</div>
-            <div class="box f"><a href="#jan_sports_headset">Jan Sports Headset</a><br>Sounds familiar, buy it!</div>
-            <div class="box g"><a href="#mini_popcorn_machine">Mini Popcorn Machine</a><br>Nice during a quarantine!</div>
-            <div class="box h"><a href="#five_star_toilet_paper">Five Star Toilet Paper</a><br>In my time of need!</div>
+          <div class="box a">
+            <a href="#huntington_shoes">Huntington Shoes</a><br />Nice and
+            comfortable.
+          </div>
+          <div class="box b">
+            <a href="#jackie_junk">Jackie Junk</a><br />Buy Jackie's trash
+            today!
+          </div>
+          <div class="box c">
+            <a href="#optimized_e-pods">Optimized E-Pods</a><br />Wireless!
+          </div>
+          <div class="box d">
+            <a href="#recycled_games:_the_warfare"
+              >Recycled Games: The Warfare</a
+            ><br />Same game, different year!
+          </div>
+          <div class="box e">
+            <a href="#bandwagon_bag">Bandwagon Bag</a><br />Your friends have
+            it!
+          </div>
+          <div class="box f">
+            <a href="#jan's_ports_headset">Jan's Ports Headset</a><br />Sounds
+            familiar, buy it!
+          </div>
+          <div class="box g">
+            <a href="#mini_popcorn_machine">Mini Popcorn Machine</a><br />Nice
+            during a quarantine!
+          </div>
+          <div class="box h">
+            <a href="#five_star_toilet_paper">Five Star Pens</a><br />Only the
+            best!
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div id="new">
-        <h2><i class="fas fa-exclamation-circle"></i> New Deals! <i class="fas fa-exclamation-circle"></i></h2>
+      <div id="new">
+        <h2>
+          <i class="fas fa-exclamation-circle"></i> New Deals!
+          <i class="fas fa-exclamation-circle"></i>
+        </h2>
         <div class="slider">
-            <div class="images">
-            </div>
-            <button type="button" class="btn prevBtn"><i class="fas fa-arrow-alt-circle-left"></i> Prev</button>
-            <button type="button" class="btn nextBtn">Next <i class="fas fa-arrow-alt-circle-right"></i></button>
+          <div class="images"></div>
+          <button type="button" class="btn prevBtn">
+            <i class="fas fa-arrow-alt-circle-left"></i> Prev
+          </button>
+          <button type="button" class="btn nextBtn">
+            Next <i class="fas fa-arrow-alt-circle-right"></i>
+          </button>
         </div>
-    </div>
+      </div>
 
-    <div id="electronics">
-        <h2><i class="fas fa-laptop"></i> Electronics <i class="fas fa-laptop"></i></h2>  
+      <div id="electronics">
+        <h2>
+          <i class="fas fa-laptop"></i> Electronics
+          <i class="fas fa-laptop"></i>
+        </h2>
         <div class="grid">
-            <div class="box a"><a href="#laptops">Laptops</a><br>Portable computers?</div>
-            <div class="box b"><a href="#epads">EPads</a><br>Portable tablet!</div>
-            <div class="box c"><a href="#ephones">EPhones</a><br>Touch screen phones!</div>
-            <div class="box d"><a href="#enteli-chips">Enteli-chips</a><br>Can work in any of your E-devices.</div>
-            <div class="box e"><a href="#woodrow_wilson_e-watch">Woodrow Wilson E-Watch</a><br>President's future watch!</div>
-            <div class="box f"><a href="#hybrid_optic_e-glove">Hybrid Optic E-glove</a><br>Good for rock climbing!</div>
-            <div class="box g"><a href="#1155-GUI_graphics_card">1155-GUI Graphics Card</a><br>E-device compatiable.</div>
-            <div class="box h"><a href="#logical_mouse">Logical Mouse</a><br>Pretty smart pet.</div>
+          <div class="box a">
+            <a href="#laptops">Laptops</a><br />Portable computers?
+          </div>
+          <div class="box b">
+            <a href="#epads">EPads</a><br />Portable tablet!
+          </div>
+          <div class="box c">
+            <a href="#ephones">EPhones</a><br />Touch screen phones!
+          </div>
+          <div class="box d">
+            <a href="#enteli-chips">Enteli-chips</a><br />Can work in any of
+            your E-devices.
+          </div>
+          <div class="box e">
+            <a href="#woodrow_wilson_e-watch">Woodrow Wilson E-Watch</a
+            ><br />President's future watch!
+          </div>
+          <div class="box f">
+            <a href="#hybrid_optic_e-glove">Hybrid Optic E-glove</a><br />Good
+            for rock climbing!
+          </div>
+          <div class="box g">
+            <a href="#1155-GUI_graphics_card">1155-GUI Graphics Card</a
+            ><br />E-device compatiable.
+          </div>
+          <div class="box h">
+            <a href="#logical_mouse">Logical Mouse</a><br />Pretty smart pet.
+          </div>
         </div>
-    </div>
-
+      </div>
     </main>
 
-
-
     <footer id="footer">
+      <div class="left_footer">
+        <span>
+          <i class="fas fa-users"></i>
+        </span>
+        <h4>About Us</h4>
+        <p>
+          The FSE Team's goal is to help customers obtain the best prices of any
+          product and delivery that product straight to your doorstep from your
+          closest local FSE retail store.
+        </p>
+      </div>
 
-        <div class="left_footer">
-            <span>
-                <i class="fas fa-users"></i>
-            </span>
-            <h4>About Us</h4>
-            <p>
-                The FSE Team's goal is to help customers obtain the best prices of any product and delivery
-                 that product straight to your doorstep from your closest local FSE retail store.
-            </p>
-        </div>
+      <div class="center_footer">
+        <span>
+          <i class="fas fa-question-circle"></i>
+        </span>
+        <h4>Contact Us</h4>
+        <p>
+          Subscribe: <br />
+          www.FireSaleEmporium@hotmail.com <br />
+          <br />
+          Customer Support: <br />
+          www.FSESupport@hotmail.com <br />
+        </p>
+      </div>
 
-        <div class="center_footer">
-            <span>
-                <i class="fas fa-question-circle"></i> 
-            </span>
-            <h4>Contact Us</h4>
-            <p>
-                Subscribe: <br> www.FireSaleEmporium@hotmail.com <br> <br>
-                Customer Support: <br> www.FSESupport@hotmail.com <br>
-            </p>
-        </div>
+      <div class="right_footer">
+        <span>
+          <i class="fas fa-comments-dollar"></i>
+        </span>
+        <h4>Sell Your Own Products</h4>
+        <p>
+          FSE will work with you to help you sell your own products through our
+          website. <br />
+          Step 1: Create an account. <br />
+          Step 2: Select the item you would like to sell. <br />
+          Step 3: Wait until someone requests a purchase! <br />
+          Step 4: Profit
+        </p>
+      </div>
 
-        <div class="right_footer">
-            <span>
-                <i class="fas fa-comments-dollar"></i>
-            </span>
-            <h4>Sell Your Own Products</h4>
-            <p>
-                FSE will work with you to help you sell your own products through our website. <br>
-                Step 1: Create an account. <br>
-                Step 2: Select the item you would like to sell. <br>
-                Step 3: Wait until someone requests a purchase! <br>
-                Step 4: Profit
-            </p>
-        </div>
-
-        <p class="copyright">Copyright 2034. All rights unreserved.</p>
-
+      <p class="copyright">Copyright 2034. All rights unreserved.</p>
     </footer>
 
-
-
     <script src="js/script.js"></script>
-
-</body>
+  </body>
 </html>
