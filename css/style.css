@@ -159,6 +159,15 @@ input[type="button"]:active {
   border: 4px solid rgb(255, 255, 255);
 }
 
+#usernameDisplay {
+  transition: 0.5s;
+}
+
+#usernameDisplay:hover {
+  color: rgb(0, 177, 0);
+  letter-spacing: 5px;
+}
+
 nav {
   float: center;
   /*text-align: center; /*Doesn't move hyperlinks to center*/
@@ -408,7 +417,7 @@ i.fas {
 }
 
 .left_footer:hover {
-  color: red;
+  color: rgb(0, 177, 0);
   letter-spacing: 5px;
 }
 
