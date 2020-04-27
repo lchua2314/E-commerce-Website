@@ -112,9 +112,9 @@ input {
   width: 200px;
   height: 30px;
   background: transparent;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid lightblue;
   border-radius: 24px;
-  color: white;
+  color: lightblue;
   background-color: darkblue;
   text-align: center;
   font-family: "Taviraj";
@@ -150,7 +150,7 @@ input[type="button"]:hover {
 input[type="button"]:focus {
   background-color: rgb(0, 0, 155);
   border: 2px solid rgb(218, 218, 218);
-  color: white;
+  color: lightblue;
   letter-spacing: 2px;
 }
 
@@ -182,11 +182,11 @@ nav {
 
 header a {
   background-color: darkblue;
-  border: 2px solid white;
+  border: 2px solid lightblue;
   border-radius: 24px;
   text-transform: capitalize;
   text-decoration: none;
-  color: white;
+  color: lightblue;
   letter-spacing: 5px;
   padding: 0px 5px;
   margin: 0px 10px;
@@ -220,7 +220,7 @@ header a:active {
 /* main */
 
 h2 {
-  border: 2px solid white;
+  border: 2px solid lightblue;
   text-align: center;
   background-color: black;
   transition: 0.5s;
@@ -273,9 +273,9 @@ h2:hover {
 
 .box {
   /* background-color: black;
-    color: white;
+    color: lightblue;
     border-radius: 5px;
-    border: 2px white solid;
+    border: 2px lightblue solid;
     margin-left: 20%; */
 
   /* width: 100px;
@@ -288,7 +288,7 @@ h2:hover {
   padding: 10%;
   text-align: center;
   /* width: 33.3333%; */
-  border: 2px solid rgb(196, 196, 196);
+  border: 2px solid lightblue;
   background: black;
   border-radius: 24px;
   transition-delay: 0.25s;
@@ -334,8 +334,8 @@ h2:hover {
 .btn {
   display: inline-block;
   background: darkblue;
-  color: white;
-  border: 3px solid white;
+  color: lightblue;
+  border: 3px solid lightblue;
   font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 20%;
@@ -380,7 +380,7 @@ footer {
   width: 100%;
   height: 400px;
   background-color: #000;
-  border: 2px solid rgb(175, 175, 175);
+  border: 2px solid lightblue;
   text-align: center;
 }
 
@@ -390,7 +390,7 @@ footer span {
 
 footer i.fab,
 i.fas {
-  border: 3px solid white;
+  border: 3px solid lightblue;
   border-radius: 24px;
   width: 100%;
 }
