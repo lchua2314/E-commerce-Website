@@ -195,11 +195,6 @@ header a {
   outline: none;
 }
 
-/* The following code does not work */
-header i {
-  padding: 100px;
-}
-
 header a:hover {
   background-color: rgb(216, 216, 216);
   border: 3px solid rgb(190, 190, 190);
