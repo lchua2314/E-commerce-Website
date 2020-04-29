@@ -148,7 +148,7 @@ input[type="button"]:hover {
 }
 
 input[type="button"]:focus {
-  background-color: rgb(0, 0, 155);
+  background-color: rgb(0, 0, 189);
   border: 2px solid lightblue;
   color: lightblue;
   letter-spacing: 2px;
