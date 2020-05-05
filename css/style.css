@@ -196,18 +196,18 @@ header a {
 }
 
 header a:hover {
-  background-color: rgb(216, 216, 216);
-  border: 3px solid rgb(190, 190, 190);
-  color: black;
+  background-color: lightblue;
+  border: 3px solid darkblue;
+  color: darkblue;
   padding: 5px;
   border-radius: 10px;
   letter-spacing: 10px;
 }
 
 header a:focus {
-  background-color: rgb(216, 216, 216);
-  border: 3px solid rgb(190, 190, 190);
-  color: black;
+  background-color: lightblue;
+  border: 3px solid darkblue;
+  color: darkblue;
   padding: 5px;
   border-radius: 10px;
   letter-spacing: 10px;
@@ -318,7 +318,7 @@ h2:hover {
   min-height: 80vh;
   background: url("img/bcg-0.jpg");
   border-radius: 15px;
-  border: 5px solid rgb(196, 196, 196);
+  border: 5px solid lightblue;
   box-shadow: 5px 10px black;
   position: relative;
   transition: 0.5s;
@@ -326,7 +326,7 @@ h2:hover {
 
 .images:hover {
   background: url("img/bcg-0.jpg") center/cover no-repeat;
-  border: 10px solid rgb(190, 190, 190);
+  border: 10px solid blue;
   padding: 1rem;
   box-shadow: 10px 15px black;
 }
@@ -359,17 +359,18 @@ h2:hover {
 }
 
 .btn:hover {
-  background: rgb(216, 216, 216);
-  color: black;
-  border: 5px solid white;
+  background: lightblue;
+  color: lightblue;
+  border: 5px solid blue;
   padding: 0.7rem;
   letter-spacing: 5px;
   box-shadow: 5px 10px black;
+  color: darkblue;
   cursor: pointer;
 }
 
 .btn:active {
-  background: rgb(194, 194, 194);
+  background: rgb(0, 153, 204);
   box-shadow: 1px 1px grey;
 }
 
