@@ -129,9 +129,9 @@ input {
 input[type="text"]:focus,
 input[type="password"]:focus {
   width: 250px;
-  background-color: rgb(216, 216, 216);
-  border: 2px solid rgb(190, 190, 190);
-  color: black;
+  background-color: lightblue;
+  border: 2px solid darkblue;
+  color: darkblue;
 }
 
 input:hover {
