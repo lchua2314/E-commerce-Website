@@ -25,7 +25,6 @@ function check(form) {
 function sendMsg() {
   let content = '<i class="fas fa-user"></i> ' + usernameIn.value;
   let content2 = passwordInfo.value;
-  //console.log(content);
   if (content === '<i class="fas fa - user"></i> ') {
     alert("Please enter a username.");
   } else if (content2.length < 8) {
