@@ -295,8 +295,8 @@ h2:hover {
 }
 
 .box:hover {
-  background-color: rgb(216, 216, 216);
-  border: 5px solid rgb(190, 190, 190);
+  background-color: lightblue;
+  border: 5px solid blue;
   color: black;
   border-radius: 28px;
   padding: 20%;
