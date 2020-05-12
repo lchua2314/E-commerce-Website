@@ -25,6 +25,15 @@
     U+FEFF, U+FFFD;
 }
 
+:root {
+  --primaryColor: darkblue;
+  --secondaryColor: lightblue;
+  --boxColor: black;
+  --mainTransition: all 0.25s linear;
+  --headerHover: red;
+  --activeBgColor: rgb(0, 153, 204);
+}
+
 /*Box Model changed so that border merges with padding and thickness*/
 
 * {
@@ -38,7 +47,7 @@ html {
 }
 
 html:hover {
-  color: lightblue;
+  color: var(--secondaryColor);
 }
 
 hr {
@@ -50,8 +59,8 @@ hr {
 header {
   width: 100%;
   height: 100%;
-  background-color: #000;
-  border: 2px solid lightblue;
+  background-color: var(--boxColor);
+  border: 2px solid var(--secondaryColor);
   /*padding: 0px; 
     margin: 0px;*/
 }
@@ -68,13 +77,13 @@ header {
   border: 1px solid transparent;
   padding: 0px;
   margin: 0px auto;
-  transition: 0.5s;
-  /* color: red; */
+  transition: var(--mainTransition);
+  /* color: var(--headerHover); */
 }
 
 #brandName:hover {
-  /* color: lightblue; */
-  color: red;
+  /* color: var(--secondaryColor); */
+  color: var(--headerHover);
   letter-spacing: 5px;
 }
 
@@ -112,9 +121,9 @@ input {
   width: 200px;
   height: 30px;
   background: transparent;
-  border: 2px solid lightblue;
+  border: 2px solid var(--secondaryColor);
   border-radius: 24px;
-  color: lightblue;
+  color: var(--secondaryColor);
   background-color: darkblue;
   text-align: center;
   font-family: "Taviraj";
@@ -123,24 +132,24 @@ input {
   padding: 4px;
   margin: 7px;
   outline: none;
-  transition: 0.5s;
+  transition: var(--mainTransition);
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
   width: 250px;
-  background-color: lightblue;
+  background-color: var(--secondaryColor);
   border: 2px solid darkblue;
   color: darkblue;
 }
 
 input:hover {
-  background-color: lightblue;
+  background-color: var(--secondaryColor);
   border: 2px solid darkblue;
 }
 
 input[type="button"]:hover {
-  background-color: lightblue;
+  background-color: var(--secondaryColor);
   border: 2px solid darkblue;
   color: darkblue;
   cursor: pointer;
@@ -148,19 +157,18 @@ input[type="button"]:hover {
 }
 
 input[type="button"]:focus {
-  background-color: lightblue;
+  background-color: var(--secondaryColor);
   border: 2px solid darkblue;
   color: darkblue;
   letter-spacing: 3px;
 }
 
 input[type="button"]:active {
-  background-color: rgb(160, 160, 160);
-  border: 4px solid lightblue;
+  background-color: var(--activeBgColor);
 }
 
 #usernameDisplay {
-  transition: 0.5s;
+  transition: var(--mainTransition);
 }
 
 #usernameDisplay:hover {
@@ -182,21 +190,21 @@ nav {
 
 header a {
   background-color: darkblue;
-  border: 2px solid lightblue;
+  border: 2px solid var(--secondaryColor);
   border-radius: 24px;
   text-transform: capitalize;
   text-decoration: none;
-  color: lightblue;
+  color: var(--secondaryColor);
   letter-spacing: 5px;
   padding: 0px 5px;
   margin: 0px 10px;
-  transition: 0.5s;
+  transition: var(--mainTransition);
   cursor: pointer;
   outline: none;
 }
 
 header a:hover {
-  background-color: lightblue;
+  background-color: var(--secondaryColor);
   border: 3px solid darkblue;
   color: darkblue;
   padding: 5px;
@@ -205,7 +213,7 @@ header a:hover {
 }
 
 header a:focus {
-  background-color: lightblue;
+  background-color: var(--secondaryColor);
   border: 3px solid darkblue;
   color: darkblue;
   padding: 5px;
@@ -214,22 +222,22 @@ header a:focus {
 }
 
 header a:active {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--activeBgColor);
 }
 
 /* main */
 
 h2 {
-  border: 2px solid lightblue;
+  border: 2px solid var(--secondaryColor);
   text-align: center;
-  background-color: black;
-  transition: 0.5s;
+  background-color: var(--boxColor);
+  transition: var(--mainTransition);
   padding: 5px;
   letter-spacing: 10px;
 }
 
 h2:hover {
-  color: red;
+  color: var(--headerHover);
   letter-spacing: 20px;
 }
 
@@ -268,14 +276,14 @@ h2:hover {
   border-radius: 15px;
   border: 5px solid rgb(196, 196, 196);
   position: relative;
-  transition: 0.5s;
+  transition: var(--mainTransition);
 }
 
 .box {
-  /* background-color: black;
-    color: lightblue;
+  /* background-color: var(--boxColor);
+    color: var(--secondaryColor);
     border-radius: 5px;
-    border: 2px lightblue solid;
+    border: 2px var(--secondaryColor) solid;
     margin-left: 20%; */
 
   /* width: 100px;
@@ -288,14 +296,14 @@ h2:hover {
   padding: 10%;
   text-align: center;
   /* width: 33.3333%; */
-  border: 2px solid lightblue;
-  background: black;
+  border: 2px solid var(--secondaryColor);
+  background: var(--boxColor);
   border-radius: 24px;
-  transition-delay: 0.25s;
+  transition: var(--mainTransition);
 }
 
 .box:hover {
-  background-color: lightblue;
+  background-color: var(--secondaryColor);
   border: 5px solid blue;
   color: black;
   border-radius: 28px;
@@ -318,10 +326,10 @@ h2:hover {
   min-height: 80vh;
   background: url("img/bcg-0.jpg");
   border-radius: 15px;
-  border: 5px solid lightblue;
+  border: 5px solid var(--secondaryColor);
   box-shadow: 5px 10px black;
   position: relative;
-  transition: 0.5s;
+  transition: var(--mainTransition);
 }
 
 .images:hover {
@@ -334,14 +342,14 @@ h2:hover {
 .btn {
   display: inline-block;
   background: darkblue;
-  color: lightblue;
-  border: 3px solid lightblue;
+  color: var(--secondaryColor);
+  border: 3px solid var(--secondaryColor);
   font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 20%;
   box-shadow: 2px 5px black;
   outline: none;
-  transition: 0.5s;
+  transition: var(--mainTransition);
 }
 
 .prevBtn {
@@ -359,8 +367,8 @@ h2:hover {
 }
 
 .btn:hover {
-  background: lightblue;
-  color: lightblue;
+  background: var(--secondaryColor);
+  color: var(--secondaryColor);
   border: 5px solid blue;
   padding: 0.7rem;
   letter-spacing: 5px;
@@ -370,7 +378,7 @@ h2:hover {
 }
 
 .btn:active {
-  background: rgb(0, 153, 204);
+  background: var(--activeBgColor);
   box-shadow: 1px 1px grey;
 }
 
@@ -381,7 +389,7 @@ footer {
   width: 100%;
   height: 400px;
   background-color: #000;
-  border: 2px solid lightblue;
+  border: 2px solid var(--secondaryColor);
   text-align: center;
 }
 
@@ -391,7 +399,7 @@ footer span {
 
 footer i.fab,
 i.fas {
-  border: 3px solid lightblue;
+  border: 3px solid var(--secondaryColor);
   border-radius: 24px;
   width: 100%;
 }
@@ -409,7 +417,7 @@ i.fas {
   padding: 0px;
   margin: 0px auto;
 
-  transition: 0.5s;
+  transition: var(--mainTransition);
 }
 
 .left_footer:hover {
@@ -430,7 +438,7 @@ i.fas {
   padding: 0px;
   margin: 0px auto;
 
-  transition: 0.5s;
+  transition: var(--mainTransition);
 }
 
 .center_footer:hover {
@@ -451,7 +459,7 @@ i.fas {
   padding: 0px;
   margin: 0px auto;
 
-  transition: 0.5s;
+  transition: var(--mainTransition);
 }
 
 .right_footer:hover {
@@ -460,11 +468,11 @@ i.fas {
 }
 
 .copyright {
-  transition: 0.5s;
+  transition: var(--mainTransition);
 }
 
 .copyright:hover {
-  color: lightblue;
+  color: var(--secondaryColor);
   letter-spacing: 5px;
   border: 1px solid blue;
 }
