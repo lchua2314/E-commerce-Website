@@ -29,9 +29,10 @@
   --primaryColor: darkblue;
   --secondaryColor: lightblue;
   --boxColor: black;
-  --mainTransition: all 0.25s linear;
+  --mainTransition: all 0.25s ease-in-out;
   --headerHover: red;
   --activeBgColor: rgb(0, 153, 204);
+  --contrastThemeColor: blue;
 }
 
 /*Box Model changed so that border merges with padding and thickness*/
@@ -41,7 +42,7 @@
 }
 
 html {
-  background-color: darkblue;
+  background-color: var(--primaryColor);
   color: rgb(209, 209, 209);
   font-family: "Taviraj";
 }
@@ -124,7 +125,7 @@ input {
   border: 2px solid var(--secondaryColor);
   border-radius: 24px;
   color: var(--secondaryColor);
-  background-color: darkblue;
+  background-color: var(--primaryColor);
   text-align: center;
   font-family: "Taviraj";
   font-size: 16px;
@@ -139,27 +140,27 @@ input[type="text"]:focus,
 input[type="password"]:focus {
   width: 250px;
   background-color: var(--secondaryColor);
-  border: 2px solid darkblue;
-  color: darkblue;
+  border: 2px solid var(--primaryColor);
+  color: var(--primaryColor);
 }
 
 input:hover {
   background-color: var(--secondaryColor);
-  border: 2px solid darkblue;
+  border: 2px solid var(--primaryColor);
 }
 
 input[type="button"]:hover {
   background-color: var(--secondaryColor);
-  border: 2px solid darkblue;
-  color: darkblue;
+  border: 2px solid var(--primaryColor);
+  color: var(--primaryColor);
   cursor: pointer;
   letter-spacing: 5px;
 }
 
 input[type="button"]:focus {
   background-color: var(--secondaryColor);
-  border: 2px solid darkblue;
-  color: darkblue;
+  border: 2px solid var(--primaryColor);
+  color: var(--primaryColor);
   letter-spacing: 3px;
 }
 
@@ -189,7 +190,7 @@ nav {
 }
 
 header a {
-  background-color: darkblue;
+  background-color: var(--primaryColor);
   border: 2px solid var(--secondaryColor);
   border-radius: 24px;
   text-transform: capitalize;
@@ -205,8 +206,8 @@ header a {
 
 header a:hover {
   background-color: var(--secondaryColor);
-  border: 3px solid darkblue;
-  color: darkblue;
+  border: 3px solid var(--primaryColor);
+  color: var(--primaryColor);
   padding: 5px;
   border-radius: 10px;
   letter-spacing: 10px;
@@ -214,8 +215,8 @@ header a:hover {
 
 header a:focus {
   background-color: var(--secondaryColor);
-  border: 3px solid darkblue;
-  color: darkblue;
+  border: 3px solid var(--primaryColor);
+  color: var(--primaryColor);
   padding: 5px;
   border-radius: 10px;
   letter-spacing: 10px;
@@ -251,7 +252,7 @@ h2:hover {
 
 #hot a:hover,
 #electronics a:hover {
-  color: darkblue;
+  color: var(--primaryColor);
   /* letter-spacing: 0px; */
 }
 
@@ -304,7 +305,7 @@ h2:hover {
 
 .box:hover {
   background-color: var(--secondaryColor);
-  border: 5px solid blue;
+  border: 5px solid var(--contrastThemeColor);
   color: black;
   border-radius: 28px;
   padding: 20%;
@@ -334,14 +335,14 @@ h2:hover {
 
 .images:hover {
   background: url("img/bcg-0.jpg") center/cover no-repeat;
-  border: 10px solid blue;
+  border: 10px solid var(--contrastThemeColor);
   padding: 1rem;
   box-shadow: 10px 15px black;
 }
 
 .btn {
   display: inline-block;
-  background: darkblue;
+  background: var(--primaryColor);
   color: var(--secondaryColor);
   border: 3px solid var(--secondaryColor);
   font-size: 1.5rem;
@@ -369,11 +370,11 @@ h2:hover {
 .btn:hover {
   background: var(--secondaryColor);
   color: var(--secondaryColor);
-  border: 5px solid blue;
+  border: 5px solid var(--contrastThemeColor);
   padding: 0.7rem;
   letter-spacing: 5px;
   box-shadow: 5px 10px black;
-  color: darkblue;
+  color: var(--primaryColor);
   cursor: pointer;
 }
 
@@ -472,7 +473,7 @@ i.fas {
 }
 
 .copyright:hover {
-  color: var(--secondaryColor);
+  color: white;
   letter-spacing: 5px;
   border: 1px solid blue;
 }
