@@ -147,6 +147,7 @@ input[type="password"]:focus {
 input:hover {
   background-color: var(--secondaryColor);
   border: 2px solid var(--primaryColor);
+  color: var(--primaryColor);
 }
 
 input[type="button"]:hover {
