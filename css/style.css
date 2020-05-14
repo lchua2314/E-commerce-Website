@@ -321,9 +321,15 @@ h2:hover {
   /* font-size: 22px; */
 }
 
-.box a:hover {
+.box a {
+  /* color: var(--primaryColor); Doesnt work */
+  transition: var(--mainTransition);
+}
+
+.box a:focus {
   /* Doesn't work */
-  color: var(--secondaryColor);
+  /* color: black; Doesn't change font color */
+  font-size: 24px;
 }
 
 .slider {
