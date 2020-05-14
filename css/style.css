@@ -125,6 +125,7 @@ header a:active {
 #head {
   background-color: var(--boxColor);
   border: 2px solid var(--secondaryColor);
+  height: 175px;
 }
 
 #brandName {
@@ -135,7 +136,6 @@ header a:active {
   position: relative;
   float: left;
   width: 33.3333333333%;
-  height: 150px;
   border: 1px solid transparent;
   padding: 0px;
   margin: 0px auto;
@@ -152,7 +152,6 @@ header a:active {
   text-align: center;
   display: inline-block;
   position: relative;
-  height: 150px;
   float: center;
   width: 33.3333333333%;
   border: 1px solid transparent;
@@ -170,7 +169,6 @@ header a:active {
   display: inline-block;
   position: relative;
   width: 33%;
-  height: 150px;
   border: 1px solid transparent;
   padding: 0px;
   margin: 0px auto;

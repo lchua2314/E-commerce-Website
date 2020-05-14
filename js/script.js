@@ -9,7 +9,7 @@ const formJS = document.querySelector("form");
 sendBtn.addEventListener("click", sendMsg);
 formJS.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log("form submitted!");
+  // console.log("form submitted!"); // Does not work
 });
 
 //Login info usage
@@ -18,7 +18,7 @@ function check(form) {
   if (form.userid.value == "dew" && form.pswrd.value == "123") {
     window.open("https://www.youtube.com/watch?v=mJa_3IiKxFk");
   } else {
-    alert("The username and password you entered don't match");
+    alert("The username and password you entered don't match.");
   }
 }
 
