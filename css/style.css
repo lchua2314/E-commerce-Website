@@ -321,6 +321,11 @@ h2:hover {
   /* font-size: 22px; */
 }
 
+.box a:hover {
+  /* Doesn't work */
+  color: var(--secondaryColor);
+}
+
 .slider {
   min-height: 85vh;
   display: flex;
