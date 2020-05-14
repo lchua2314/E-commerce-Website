@@ -23,54 +23,58 @@
         <a href="#store"><i class="fas fa-store"></i> store</a>
         <a href="#footer"><i class="far fa-question-circle"></i> support</a>
         <a href="#hot"><i class="fab fa-hotjar"></i> hot</a>
-        <a href="#new"><i class="fas fa-exclamation-circle"></i> new</a> <br />
-        <br />
+        <a href="#new"><i class="fas fa-exclamation-circle"></i> new</a>
         <a href="#shoes"><i class="fas fa-shoe-prints"></i> shoes</a>
         <a href="#books"><i class="fas fa-book"></i> books</a>
         <a href="#cooking"><i class="fas fa-utensils"></i> cooking</a>
         <a href="#cart"><i class="fas fa-cart-plus"></i> cart</a>
         <a href="#electronics"><i class="fas fa-laptop"></i> electronics</a>
       </nav>
-      <div id="brandName">
-        <i class="fas fa-fire"></i> <br />
-        Fire Sale Emporium
-      </div>
-      <div class="searchBar">
-        <form name="searchBarForm" action="index.html" method="post">
-          <input
-            type="text"
-            name="searchText"
-            class="search-txt"
-            placeholder="Type to search"
-          /><br />
-          <input type="button" onclick="" value="Search" id="searchBtn" />
-        </form>
-      </div>
 
-      <div id="loginBox">
-        <form name="loginForm" action="index.html" method="post">
-          <input
-            type="text"
-            placeholder="Username"
-            name="userid"
-            id="userid"
-            pattern="[a-zA-Z0-9]+"
-            required
-          /><br />
-          <input
-            type="password"
-            placeholder="Password"
-            name="pswrd"
-            id="pswrd"
-          /><br />
-          <input
-            type="button"
-            onclick="check(this.form)"
-            value="Login"
-            id="loginBtn"
-          />
-          <div id="usernameDisplay"></div>
-        </form>
+      <div id="space"></div>
+
+      <div id="head">
+        <div id="brandName">
+          <i class="fas fa-fire"></i> <br />
+          Fire Sale Emporium
+        </div>
+        <div class="searchBar">
+          <form name="searchBarForm" action="index.html" method="post">
+            <input
+              type="text"
+              name="searchText"
+              class="search-txt"
+              placeholder="Type to search"
+            /><br />
+            <input type="button" onclick="" value="Search" id="searchBtn" />
+          </form>
+        </div>
+
+        <div id="loginBox">
+          <form name="loginForm" action="index.html" method="post">
+            <input
+              type="text"
+              placeholder="Username"
+              name="userid"
+              id="userid"
+              pattern="[a-zA-Z0-9]+"
+              required
+            /><br />
+            <input
+              type="password"
+              placeholder="Password"
+              name="pswrd"
+              id="pswrd"
+            /><br />
+            <input
+              type="button"
+              onclick="check(this.form)"
+              value="Login"
+              id="loginBtn"
+            />
+            <div id="usernameDisplay"></div>
+          </form>
+        </div>
       </div>
     </header>
 

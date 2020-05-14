@@ -58,12 +58,73 @@ hr {
 /* header */
 
 header {
-  width: 100%;
-  height: 100%;
+  /* No point in having this but leave for reference
   background-color: var(--boxColor);
-  border: 2px solid var(--secondaryColor);
+  border: 2px solid var(--secondaryColor); */
+
   /*padding: 0px; 
     margin: 0px;*/
+}
+
+nav {
+  float: center;
+  /*text-align: center; /*Doesn't move hyperlinks to center*/
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  border: 2px solid var(--secondaryColor);
+  background-color: var(--boxColor);
+  padding: 10px 0px;
+  margin: 0px;
+  text-align: center;
+  z-index: 100;
+}
+
+header a {
+  background-color: var(--primaryColor);
+  border: 2px solid var(--secondaryColor);
+  border-radius: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--secondaryColor);
+  letter-spacing: 5px;
+  padding: 0px 5px;
+  margin: 0px 10px;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  outline: none;
+}
+
+header a:hover {
+  background-color: var(--secondaryColor);
+  border: 3px solid var(--primaryColor);
+  color: var(--primaryColor);
+  padding: 5px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}
+
+header a:focus {
+  background-color: var(--secondaryColor);
+  border: 3px solid var(--primaryColor);
+  color: var(--primaryColor);
+  padding: 5px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}
+
+header a:active {
+  background-color: var(--activeBgColor);
+}
+
+#space {
+  height: 70px;
+}
+
+#head {
+  background-color: var(--boxColor);
+  border: 2px solid var(--secondaryColor);
 }
 
 #brandName {
@@ -174,55 +235,6 @@ input[type="button"]:active {
 #usernameDisplay:hover {
   color: rgb(0, 177, 0);
   letter-spacing: 5px;
-}
-
-nav {
-  float: center;
-  /*text-align: center; /*Doesn't move hyperlinks to center*/
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  border: 1px solid transparent;
-  padding: 10px 0px;
-  margin: 0px;
-  text-align: center;
-}
-
-header a {
-  background-color: var(--primaryColor);
-  border: 2px solid var(--secondaryColor);
-  border-radius: 24px;
-  text-transform: capitalize;
-  text-decoration: none;
-  color: var(--secondaryColor);
-  letter-spacing: 5px;
-  padding: 0px 5px;
-  margin: 0px 10px;
-  transition: var(--mainTransition);
-  cursor: pointer;
-  outline: none;
-}
-
-header a:hover {
-  background-color: var(--secondaryColor);
-  border: 3px solid var(--primaryColor);
-  color: var(--primaryColor);
-  padding: 5px;
-  border-radius: 10px;
-  letter-spacing: 10px;
-}
-
-header a:focus {
-  background-color: var(--secondaryColor);
-  border: 3px solid var(--primaryColor);
-  color: var(--primaryColor);
-  padding: 5px;
-  border-radius: 10px;
-  letter-spacing: 10px;
-}
-
-header a:active {
-  background-color: var(--activeBgColor);
 }
 
 /* main */
