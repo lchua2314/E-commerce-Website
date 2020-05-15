@@ -125,7 +125,7 @@ header a:active {
 #head {
   background-color: var(--boxColor);
   border: 2px solid var(--secondaryColor);
-  height: 175px;
+  height: 195px;
 }
 
 #brandName {
@@ -137,7 +137,7 @@ header a:active {
   float: left;
   width: 33.3333333333%;
   border: 1px solid transparent;
-  padding: 0px;
+  padding: 20px 0px;
   margin: 0px auto;
   transition: var(--mainTransition);
 }
@@ -155,7 +155,7 @@ header a:active {
   float: center;
   width: 33.3333333333%;
   border: 1px solid transparent;
-  padding: 0px;
+  padding: 20px 0px;
   margin: 0px auto;
 }
 
@@ -170,7 +170,7 @@ header a:active {
   position: relative;
   width: 33%;
   border: 1px solid transparent;
-  padding: 0px;
+  padding: 20px 0px;
   margin: 0px auto;
   font-family: "Taviraj";
 }
