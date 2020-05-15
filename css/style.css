@@ -68,16 +68,14 @@ header {
 
 nav {
   float: center;
-  /*text-align: center; /*Doesn't move hyperlinks to center*/
   display: inline-block;
   position: fixed;
-  width: 100%;
-  height: 55px;
   border: 2px solid var(--secondaryColor);
   background-color: var(--boxColor);
   padding: 10px 0px;
   margin: 0px;
   text-align: center;
+  align-items: center;
   z-index: 100;
 }
 
@@ -125,7 +123,7 @@ header a:active {
 #head {
   background-color: var(--boxColor);
   border: 2px solid var(--secondaryColor);
-  height: 195px;
+  height: 175px;
 }
 
 #brandName {
@@ -137,7 +135,7 @@ header a:active {
   float: left;
   width: 33.3333333333%;
   border: 1px solid transparent;
-  padding: 20px 0px;
+  padding: 0px;
   margin: 0px auto;
   transition: var(--mainTransition);
 }
@@ -155,7 +153,7 @@ header a:active {
   float: center;
   width: 33.3333333333%;
   border: 1px solid transparent;
-  padding: 20px 0px;
+  padding: 0px;
   margin: 0px auto;
 }
 
@@ -170,7 +168,7 @@ header a:active {
   position: relative;
   width: 33%;
   border: 1px solid transparent;
-  padding: 20px 0px;
+  padding: 0px;
   margin: 0px auto;
   font-family: "Taviraj";
 }
