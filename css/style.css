@@ -33,6 +33,7 @@
   --headerHover: red;
   --activeBgColor: rgb(0, 153, 204);
   --contrastThemeColor: blue;
+  --primaryBorder: 2px outset var(--secondaryColor);
 }
 
 /*Box Model changed so that border merges with padding and thickness*/
@@ -60,19 +61,20 @@ hr {
 header {
   /* No point in having this but leave for reference
   background-color: var(--boxColor);
-  border: 2px solid var(--secondaryColor); */
+  border: var(--primaryBorder); */
 
   /*padding: 0px; 
     margin: 0px;*/
 }
 
+/* Edited this for new navbar */
 nav {
   float: center;
   display: inline-block;
   position: fixed;
-  border: 2px solid var(--secondaryColor);
+  border: var(--primaryBorder);
   background-color: var(--boxColor);
-  padding: 10px 0px;
+  padding: 10px 10px;
   margin: 0px;
   text-align: center;
   align-items: center;
@@ -81,7 +83,7 @@ nav {
 
 header a {
   background-color: var(--primaryColor);
-  border: 2px solid var(--secondaryColor);
+  border: var(--primaryBorder);
   border-radius: 24px;
   text-transform: capitalize;
   text-decoration: none;
@@ -96,7 +98,7 @@ header a {
 
 header a:hover {
   background-color: var(--secondaryColor);
-  border: 3px solid var(--primaryColor);
+  border: 3px outset var(--primaryColor);
   color: var(--primaryColor);
   padding: 5px;
   border-radius: 10px;
@@ -105,7 +107,7 @@ header a:hover {
 
 header a:focus {
   background-color: var(--secondaryColor);
-  border: 3px solid var(--primaryColor);
+  border: 3px outset var(--primaryColor);
   color: var(--primaryColor);
   padding: 5px;
   border-radius: 10px;
@@ -122,7 +124,7 @@ header a:active {
 
 #head {
   background-color: var(--boxColor);
-  border: 2px solid var(--secondaryColor);
+  border: var(--primaryBorder);
   height: 195px;
 }
 
@@ -134,7 +136,7 @@ header a:active {
   position: relative;
   float: left;
   width: 33.3333333333%;
-  border: 1px solid transparent;
+  border: 1px outset transparent;
   padding: 20px 0px;
   margin: 0px auto;
   transition: var(--mainTransition);
@@ -152,7 +154,7 @@ header a:active {
   position: relative;
   float: center;
   width: 33.3333333333%;
-  border: 1px solid transparent;
+  border: 1px outset transparent;
   padding: 20px 0px;
   margin: 0px auto;
 }
@@ -167,7 +169,7 @@ header a:active {
   display: inline-block;
   position: relative;
   width: 33%;
-  border: 1px solid transparent;
+  border: 1px outset transparent;
   padding: 20px 0px;
   margin: 0px auto;
   font-family: "Taviraj";
@@ -177,7 +179,7 @@ input {
   width: 200px;
   height: 30px;
   background: transparent;
-  border: 2px solid var(--secondaryColor);
+  border: var(--primaryBorder);
   border-radius: 24px;
   color: var(--secondaryColor);
   background-color: var(--primaryColor);
@@ -195,19 +197,19 @@ input[type="text"]:focus,
 input[type="password"]:focus {
   width: 250px;
   background-color: var(--secondaryColor);
-  border: 2px solid var(--primaryColor);
+  border: 2px outset var(--primaryColor);
   color: var(--primaryColor);
 }
 
 input:hover {
   background-color: var(--secondaryColor);
-  border: 2px solid var(--primaryColor);
+  border: 2px outset var(--primaryColor);
   color: var(--primaryColor);
 }
 
 input[type="button"]:hover {
   background-color: var(--secondaryColor);
-  border: 2px solid var(--primaryColor);
+  border: 2px outset var(--primaryColor);
   color: var(--primaryColor);
   cursor: pointer;
   letter-spacing: 5px;
@@ -215,7 +217,7 @@ input[type="button"]:hover {
 
 input[type="button"]:focus {
   background-color: var(--secondaryColor);
-  border: 2px solid var(--primaryColor);
+  border: 2px outset var(--primaryColor);
   color: var(--primaryColor);
   letter-spacing: 3px;
 }
@@ -236,7 +238,7 @@ input[type="button"]:active {
 /* main */
 
 h2 {
-  border: 2px solid var(--secondaryColor);
+  border: var(--primaryBorder);
   text-align: center;
   background-color: var(--boxColor);
   transition: var(--mainTransition);
@@ -282,7 +284,7 @@ h2:hover {
   max-width: 100%;
   max-height: 100%;
   border-radius: 15px;
-  border: 5px solid rgb(196, 196, 196);
+  border: 5px outset rgb(196, 196, 196);
   position: relative;
   transition: var(--mainTransition);
 }
@@ -300,7 +302,7 @@ h2:hover {
   padding: 10%;
   text-align: center;
   /* width: 33.3333%; */
-  border: 2px solid var(--secondaryColor);
+  border: var(--primaryBorder);
   background: var(--boxColor);
   border-radius: 24px;
   transition: var(--mainTransition);
@@ -308,7 +310,7 @@ h2:hover {
 
 .box:hover {
   background-color: var(--secondaryColor);
-  border: 5px solid var(--contrastThemeColor);
+  border: 5px outset var(--contrastThemeColor);
   color: var(--primaryColor);
   border-radius: 28px;
   padding: 20%;
@@ -341,7 +343,7 @@ h2:hover {
   min-height: 80vh;
   background: url("img/bcg-0.jpg");
   border-radius: 15px;
-  border: 5px solid var(--secondaryColor);
+  border: 5px outset var(--secondaryColor);
   box-shadow: 5px 10px black;
   position: relative;
   transition: var(--mainTransition);
@@ -349,7 +351,7 @@ h2:hover {
 
 .images:hover {
   background: url("img/bcg-0.jpg") center/cover no-repeat;
-  border: 10px solid var(--contrastThemeColor);
+  border: 10px outset var(--contrastThemeColor);
   padding: 1rem;
   box-shadow: 10px 15px black;
 }
@@ -358,7 +360,7 @@ h2:hover {
   display: inline-block;
   background: var(--primaryColor);
   color: var(--secondaryColor);
-  border: 3px solid var(--secondaryColor);
+  border: 3px outset var(--secondaryColor);
   font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 20%;
@@ -384,7 +386,7 @@ h2:hover {
 .btn:hover {
   background: var(--secondaryColor);
   color: var(--secondaryColor);
-  border: 5px solid var(--contrastThemeColor);
+  border: 5px outset var(--contrastThemeColor);
   padding: 0.7rem;
   letter-spacing: 5px;
   box-shadow: 5px 10px black;
@@ -404,7 +406,7 @@ footer {
   width: 100%;
   height: 400px;
   background-color: black;
-  border: 2px solid var(--secondaryColor);
+  border: var(--primaryBorder);
   text-align: center;
 }
 
@@ -414,7 +416,7 @@ footer span {
 
 footer i.fab,
 i.fas {
-  border: 3px solid var(--secondaryColor);
+  border: 3px outset var(--secondaryColor);
   border-radius: 24px;
   width: 100%;
 }
@@ -428,7 +430,7 @@ i.fas {
   float: left;
   width: 33%;
   height: 80%;
-  border: 1px solid transparent;
+  border: 1px outset transparent;
   padding: 0px;
   margin: 0px auto;
 
@@ -449,7 +451,7 @@ i.fas {
   float: center;
   width: 33%;
   height: 80%;
-  border: 1px solid transparent;
+  border: 1px outset transparent;
   padding: 0px;
   margin: 0px auto;
 
@@ -470,7 +472,7 @@ i.fas {
   float: right;
   width: 33%;
   height: 80%;
-  border: 1px solid transparent;
+  border: 1px outset transparent;
   padding: 0px;
   margin: 0px auto;
 
@@ -489,5 +491,82 @@ i.fas {
 .copyright:hover {
   color: white;
   letter-spacing: 5px;
-  border: 1px solid blue;
+  border: 1px outset blue;
+}
+
+/* Experimental Navbar Code */
+
+/* Navbar Button */
+.navbar__btn {
+  align-self: center;
+  border: 5px outset var(--secondaryColor);
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 5px;
+  margin: 0.5rem;
+  background: var(--secondaryColor);
+  transition: all 2s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: var(--mainTransition);
+  background: rgba(0, 0, 139, 0.514);
+  z-index: 2;
+  /* visibility: hidden; */
+}
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 3;
+  background: rgb(0, 0, 0);
+  padding: 1.5rem;
+  transition: var(--mainTransition);
+  border: 2px groove var(--secondaryColor);
+  /* transform: translateX(100%); */
+}
+
+.transparentBcg {
+  visibility: visible;
+}
+
+.showCart {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+.close-cart {
+  font-size: 1.7rem;
+  cursor: pointer;
 }
