@@ -17,8 +17,7 @@ formJS.addEventListener("submit", (event) => {
 function check(form) {
   if (form.userid.value == "dew" && form.pswrd.value == "123") {
     window.open("https://www.youtube.com/watch?v=mJa_3IiKxFk");
-  } else {
-    alert("The username and password you entered don't match.");
+    alert("Thanks for checking out at my code! :)");
   }
 }
 
@@ -26,9 +25,10 @@ function sendMsg() {
   let content = '<i class="fas fa-user"></i> ' + usernameIn.value;
   let content2 = passwordInfo.value;
   if (content === '<i class="fas fa - user"></i> ') {
-    alert("Please enter a username.");
+    usernameOut.innerHTML = "Please enter a username.";
   } else if (content2.length < 8) {
-    alert("Please enter a password that is at least 8 character long.");
+    usernameOut.innerHTML =
+      "Please enter a password that is at least 8 character long.";
   } else {
     usernameOut.innerHTML = content;
     usernameIn.value = "";
