@@ -67,13 +67,94 @@ header {
     margin: 0px;*/
 }
 
-/* Edited this for new navbar */
+/* Navigation bar */
+
+.navbar__btn {
+  align-self: center;
+  border: 5px outset var(--secondaryColor);
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: var(--boxColor);
+}
+
+.navbar__btn:hover {
+  border: 7px outset var(--secondaryColor);
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 5px;
+  margin: 0.5rem;
+  background: var(--secondaryColor);
+  transition: all 2s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: var(--mainTransition);
+  background: rgba(0, 0, 139, 0.514);
+  z-index: 2;
+  visibility: hidden;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* text-align: center; Can move hyperlinks, but it looks nicer on the left */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 3;
+  background: rgb(0, 0, 0);
+  padding: 1.5rem;
+  transition: var(--mainTransition);
+  border: 2px groove var(--secondaryColor);
+  transform: translateX(100%);
+}
+
+.transparentBcg {
+  visibility: visible;
+}
+
+.showNavbar {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+.close-navbar {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+/* End of new navbar code */
 nav {
   float: center;
   display: inline-block;
   position: fixed;
-  border: var(--primaryBorder);
-  background-color: var(--boxColor);
   padding: 10px 10px;
   margin: 0px;
   text-align: center;
@@ -117,6 +198,7 @@ header a:focus {
 header a:active {
   background-color: var(--activeBgColor);
 }
+/* Navbar end */
 
 #space {
   height: 70px;
@@ -492,81 +574,4 @@ i.fas {
   color: white;
   letter-spacing: 5px;
   border: 1px outset blue;
-}
-
-/* Experimental Navbar Code */
-
-/* Navbar Button */
-.navbar__btn {
-  align-self: center;
-  border: 5px outset var(--secondaryColor);
-  cursor: pointer;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 30px;
-  height: 5px;
-  margin: 0.5rem;
-  background: var(--secondaryColor);
-  transition: all 2s ease;
-}
-
-.change .bar1 {
-  transform: rotate(-45deg) translate(-10px, 10px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  transform: rotate(45deg) translate(-7px, -8px);
-}
-
-.cart-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  transition: var(--mainTransition);
-  background: rgba(0, 0, 139, 0.514);
-  z-index: 2;
-  /* visibility: hidden; */
-}
-.cart {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  z-index: 3;
-  background: rgb(0, 0, 0);
-  padding: 1.5rem;
-  transition: var(--mainTransition);
-  border: 2px groove var(--secondaryColor);
-  /* transform: translateX(100%); */
-}
-
-.transparentBcg {
-  visibility: visible;
-}
-
-.showCart {
-  transform: translateX(0);
-}
-
-@media screen and (min-width: 768px) {
-  .cart {
-    width: 30vw;
-    min-width: 450px;
-  }
-}
-
-.close-cart {
-  font-size: 1.7rem;
-  cursor: pointer;
 }

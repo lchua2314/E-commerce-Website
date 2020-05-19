@@ -76,18 +76,21 @@ function prevSlide() {
   container.style.backgroundImage = "url('css/img/bcg-" + counter + ".jpg";
 }
 
-// Functionallity with Navbar
+// Navigation Bar
 
+const navbar = document.querySelector(".navbar");
 const navbarBtn = document.querySelector(".navbar__btn");
-const navbarLinks = document.querySelector(".navbar__links");
+const navbarOverlay = document.querySelector(".navbar-overlay");
 
 navbarBtn.addEventListener("click", function () {
-  let value = navbarLinks.classList.contains("navbar__collapse");
+  let value = navbar.classList.contains("showNavbar");
   if (value) {
-    navbarLinks.classList.remove("navbar__collapse");
+    navbar.classList.remove("showNavbar");
+    navbarOverlay.classList.remove("transparentBcg");
     navbarBtn.classList.remove("change");
   } else {
-    navbarLinks.classList.add("navbar__collapse");
+    navbar.classList.add("showNavbar");
+    navbarOverlay.classList.add("transparentBcg");
     navbarBtn.classList.add("change");
   }
 });
