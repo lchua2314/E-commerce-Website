@@ -1,4 +1,4 @@
-/*The following two CSS rules are from Google Fonts. Picked out 'Taviraj' normal and italic*/
+/* The following two CSS rules are from Google Fonts. Picked out 'Taviraj' normal and italic */
 @font-face {
   font-family: "Taviraj";
   font-style: italic;
@@ -36,7 +36,7 @@
   --primaryBorder: 2px outset var(--secondaryColor);
 }
 
-/*Box Model changed so that border merges with padding and thickness*/
+/* Box Model changed so that border merges with padding and thickness */
 
 * {
   box-sizing: border-box;
@@ -336,8 +336,8 @@ h2:hover {
 #hot a,
 #electronics a {
   color: rgb(0, 102, 255);
-  /* Letter-spacing makes the height collide with the next part of the website */
-  /* letter-spacing: 5px; */
+  /* Letter-spacing makes the height collide with the next part of the website
+  letter-spacing: 5px; */
 }
 
 #hot a:hover,

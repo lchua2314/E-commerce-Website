@@ -1,4 +1,4 @@
-//Login Interaction
+// Login Interaction
 const sendBtn = document.querySelector("#loginBtn");
 const usernameIn = document.querySelector("#userid");
 const usernameOut = document.querySelector("#usernameDisplay");
@@ -12,8 +12,8 @@ formJS.addEventListener("submit", (event) => {
   // console.log("form submitted!"); // Does not work
 });
 
-//Login info usage
-//Code is insecure, but it is here just to test the login.
+// Login info usage
+// Code is insecure, but it is here just to test the login.
 function check(form) {
   if (form.userid.value == "dew" && form.pswrd.value == "123") {
     window.open("https://www.youtube.com/watch?v=mJa_3IiKxFk");
@@ -36,7 +36,7 @@ function sendMsg() {
   }
 }
 
-//Slider
+// Slider
 const nextBtn = document.querySelector(".nextBtn");
 const prevBtn = document.querySelector(".prevBtn");
 const container = document.querySelector(".images");
