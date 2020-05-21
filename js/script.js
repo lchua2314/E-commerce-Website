@@ -2,8 +2,7 @@
 const sendBtn = document.querySelector("#loginBtn");
 const usernameIn = document.querySelector("#userid");
 const usernameOut = document.querySelector("#usernameDisplay");
-const passwordInfo = document.querySelector("#pswrd");
-
+const passwordIn = document.querySelector("#pswrd");
 const formJS = document.querySelector("form");
 
 sendBtn.addEventListener("click", sendMsg);
@@ -22,17 +21,17 @@ function check(form) {
 }
 
 function sendMsg() {
-  let content = '<i class="fas fa-user"></i> ' + usernameIn.value;
-  let content2 = passwordInfo.value;
-  if (content === '<i class="fas fa - user"></i> ') {
+  let username = '<i class="fas fa-user"></i> ' + usernameIn.value;
+  let password = passwordIn.value;
+  if (usernameIn.value === "") {
     usernameOut.innerHTML = "Please enter a username.";
-  } else if (content2.length < 8) {
+  } else if (password.length < 8) {
     usernameOut.innerHTML =
       "Please enter a password that is at least 8 character long.";
   } else {
-    usernameOut.innerHTML = content;
+    usernameOut.innerHTML = username;
     usernameIn.value = "";
-    passwordInfo.value = "";
+    passwordIn.value = "";
   }
 }
 
@@ -83,8 +82,7 @@ const navbarBtn = document.querySelector(".navbar__btn");
 const navbarOverlay = document.querySelector(".navbar-overlay");
 
 navbarBtn.addEventListener("click", function () {
-  let value = navbar.classList.contains("showNavbar");
-  if (value) {
+  if (navbar.classList.contains("showNavbar")) {
     navbar.classList.remove("showNavbar");
     navbarOverlay.classList.remove("transparentBcg");
     navbarBtn.classList.remove("change");
