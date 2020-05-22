@@ -200,14 +200,9 @@ header a:active {
 }
 /* Navbar end */
 
-#space {
-  height: 70px;
-}
-
 #head {
   background-color: var(--boxColor);
   border: var(--primaryBorder);
-  height: 195px;
 }
 
 #brandName {
@@ -217,7 +212,7 @@ header a:active {
   display: inline-block;
   position: relative;
   float: left;
-  width: 33.3333333333%;
+  width: 33%;
   border: 1px outset transparent;
   padding: 20px 0px;
   margin: 0px auto;
@@ -229,19 +224,19 @@ header a:active {
   letter-spacing: 5px;
 }
 
-.searchBar {
+#searchBar {
   /* font-size: 3rem; Removing this will make sure there is no spacing between buttons*/
   text-align: center;
   display: inline-block;
   position: relative;
   float: center;
-  width: 33.3333333333%;
+  width: 33%;
   border: 1px outset transparent;
   padding: 20px 0px;
   margin: 0px auto;
 }
 
-.searchBar input {
+#searchBar input {
   margin: 20px auto;
 }
 
@@ -573,4 +568,14 @@ i.fas {
   color: white;
   letter-spacing: 5px;
   border: 1px outset blue;
+}
+
+/* Testing Media Queries */
+@media (max-width: 768px) {
+  #brandName,
+  #searchBar,
+  #loginBox {
+    width: 100%;
+    min-width: 450px;
+  }
 }
