@@ -203,19 +203,21 @@ header a:active {
 #head {
   background-color: var(--boxColor);
   border: var(--primaryBorder);
+  margin: auto; /*second auto centers the grid*/
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-row-gap: 50px;
+  grid-auto-flow: row;
+  /* grid-template-rows: 100%; added */
+  grid-column-gap: 5%;
+  flex: auto;
 }
 
 #brandName {
-  box-sizing: content-box;
+  border: 1px outset transparent;
   font-size: 2rem;
   text-align: center;
-  display: inline-block;
-  position: relative;
-  float: left;
-  width: 33%;
-  border: 1px outset transparent;
-  padding: 20px 0px;
-  margin: 0px auto;
+  /* float: left; Taking out the three floats will fix the media media query problem */
   transition: var(--mainTransition);
 }
 
@@ -225,37 +227,25 @@ header a:active {
 }
 
 #searchBar {
+  border: 1px outset transparent;
   /* font-size: 3rem; Removing this will make sure there is no spacing between buttons*/
   text-align: center;
-  display: inline-block;
-  position: relative;
-  float: center;
-  width: 33%;
-  border: 1px outset transparent;
-  padding: 20px 0px;
-  margin: 0px auto;
 }
 
 #searchBar input {
-  margin: 20px auto;
+  margin: 20px;
 }
 
 #loginBox {
-  text-align: center;
-  float: right;
-  display: inline-block;
-  position: relative;
-  width: 33%;
   border: 1px outset transparent;
-  padding: 20px 0px;
-  margin: 0px auto;
+  text-align: center;
   font-family: "Taviraj";
 }
 
 input {
   width: 200px;
   height: 30px;
-  background: transparent;
+  /* background: green;  Not sure why this is here */
   border: var(--primaryBorder);
   border-radius: 24px;
   color: var(--secondaryColor);
@@ -304,6 +294,8 @@ input[type="button"]:active {
 }
 
 #usernameDisplay {
+  display: inline;
+  z-index: 2;
   transition: var(--mainTransition);
 }
 
@@ -343,7 +335,6 @@ h2:hover {
 
 .grid {
   width: 90%;
-  height: 500px;
   margin: 100px auto 0px auto; /*second auto centers the grid*/
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
@@ -355,6 +346,7 @@ h2:hover {
   flex: auto;
 }
 
+/* Unused for now */
 .img {
   /* flex: 0 0 50%; /*width is 80%*/
   max-width: 100%;
@@ -479,11 +471,8 @@ h2:hover {
 
 footer {
   text-align: end;
-  width: 100%;
-  height: 400px;
   background-color: black;
   border: var(--primaryBorder);
-  text-align: center;
 }
 
 footer span {
@@ -498,14 +487,13 @@ i.fas {
 }
 
 .left_footer {
-  box-sizing: content-box;
   text-align: center;
 
   display: inline-block;
   position: relative;
   float: left;
   width: 33%;
-  height: 80%;
+  height: 100%;
   border: 1px outset transparent;
   padding: 0px;
   margin: 0px auto;
@@ -519,14 +507,13 @@ i.fas {
 }
 
 .center_footer {
-  box-sizing: content-box;
   text-align: center;
 
   display: inline-block;
   position: relative;
   float: center;
   width: 33%;
-  height: 80%;
+  height: 100%;
   border: 1px outset transparent;
   padding: 0px;
   margin: 0px auto;
@@ -540,14 +527,13 @@ i.fas {
 }
 
 .right_footer {
-  box-sizing: content-box;
   text-align: center;
 
   display: inline-block;
   position: relative;
   float: right;
   width: 33%;
-  height: 80%;
+  height: 100%;
   border: 1px outset transparent;
   padding: 0px;
   margin: 0px auto;
@@ -557,10 +543,11 @@ i.fas {
 
 .right_footer:hover {
   color: gray;
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
 }
 
 .copyright {
+  text-align: left;
   transition: var(--mainTransition);
 }
 
@@ -571,11 +558,72 @@ i.fas {
 }
 
 /* Testing Media Queries */
+
 @media (max-width: 768px) {
-  #brandName,
-  #searchBar,
-  #loginBox {
+  /* 768px, 1000px */
+
+  /* head */
+  #head {
+    margin: auto auto; /*second auto centers the grid*/
+    display: grid;
+    grid-template-rows: repeat(3, minmax(auto, 1fr));
+    grid-template-columns: 100%;
+    grid-row-gap: 0px;
+    grid-auto-flow: column;
+    /* grid-template-rows: 100%; added */
+    grid-column-gap: 5%;
+    flex: auto;
+  }
+
+  /* Grid Boxes */
+
+  .grid {
+    width: 90%;
+    margin: 100px auto 0px auto; /*second auto centers the grid*/
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-row-gap: 50px;
+    grid-auto-flow: row;
+    /* grid-template-rows: 100%; added */
+    grid-template-rows: repeat(3, minmax(auto, 1fr));
+    grid-column-gap: 5%;
+    flex: auto;
+  }
+
+  /* Slider */
+  .prevBtn,
+  .nextBtn {
+    top: 90%;
+  }
+
+  /* footer */
+  #footer_box {
+    margin: auto auto; /*second auto centers the grid*/
+    display: grid;
+    grid-template-rows: repeat(3, minmax(auto, 1fr));
+    grid-template-columns: 100%;
+    grid-row-gap: 0px;
+    grid-auto-flow: column;
+    /* grid-template-rows: 100%; added */
+    grid-column-gap: 5%;
+    flex: auto;
+  }
+
+  .left_footer,
+  .center_footer,
+  .right_footer {
+    border: 1px outset transparent;
+    display: inline-block;
+    position: relative;
+    float: center;
     width: 100%;
-    min-width: 450px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px 0px;
+  }
+
+  .right_footer:hover {
+    color: gray;
+    letter-spacing: 5px;
   }
 }
