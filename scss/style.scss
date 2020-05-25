@@ -1,3 +1,6 @@
+// Imports
+@import "config";
+
 /* The following two CSS rules are from Google Fonts. Picked out 'Taviraj' normal and italic */
 @font-face {
   font-family: "Taviraj";
@@ -25,17 +28,6 @@
     U+FEFF, U+FFFD;
 }
 
-:root {
-  --primaryColor: darkblue;
-  --secondaryColor: lightblue;
-  --boxColor: black;
-  --mainTransition: all 0.25s ease-in-out;
-  --headerHover: red;
-  --activeBgColor: rgb(0, 153, 204);
-  --contrastThemeColor: blue;
-  --primaryBorder: 2px outset var(--secondaryColor);
-}
-
 /* Box Model changed so that border merges with padding and thickness */
 
 * {
@@ -43,13 +35,13 @@
 }
 
 html {
-  background-color: var(--primaryColor);
+  background-color: $primaryColor;
   color: rgb(209, 209, 209);
   font-family: "Taviraj";
 }
 
 html:hover {
-  color: var(--secondaryColor);
+  color: $secondaryColor;
 }
 
 hr {
@@ -62,14 +54,14 @@ hr {
 
 .navbar__btn {
   align-self: center;
-  border: 5px outset var(--secondaryColor);
+  border: 5px outset $secondaryColor;
   cursor: pointer;
   transition: 0.5s;
-  background-color: var(--boxColor);
+  background-color: $boxColor;
 }
 
 .navbar__btn:hover {
-  border: 7px outset var(--secondaryColor);
+  border: 7px outset $secondaryColor;
 }
 
 .bar1,
@@ -78,7 +70,7 @@ hr {
   width: 30px;
   height: 5px;
   margin: 0.5rem;
-  background: var(--secondaryColor);
+  background: $secondaryColor;
   transition: all 2s ease;
 }
 
@@ -102,11 +94,12 @@ hr {
   right: 0;
   width: 100%;
   height: 100%;
-  transition: var(--mainTransition);
+  transition: $mainTransition;
   background: rgba(0, 0, 139, 0.514);
   z-index: 2;
   visibility: hidden;
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -118,8 +111,8 @@ hr {
   z-index: 3;
   background: rgb(0, 0, 0);
   padding: 1.5rem;
-  transition: var(--mainTransition);
-  border: 2px groove var(--secondaryColor);
+  transition: $mainTransition;
+  border: 2px groove $secondaryColor;
   transform: translateX(100%);
 }
 
@@ -155,46 +148,46 @@ nav {
 }
 
 header a {
-  background-color: var(--primaryColor);
-  border: var(--primaryBorder);
+  background-color: $primaryColor;
+  border: $primaryBorder;
   border-radius: 24px;
   text-transform: capitalize;
   text-decoration: none;
-  color: var(--secondaryColor);
+  color: $secondaryColor;
   letter-spacing: 5px;
   padding: 0px 5px;
   margin: 0px 10px;
-  transition: var(--mainTransition);
+  transition: $mainTransition;
   cursor: pointer;
   outline: none;
 }
 
 header a:hover {
-  background-color: var(--secondaryColor);
-  border: 3px outset var(--primaryColor);
-  color: var(--primaryColor);
+  background-color: $secondaryColor;
+  border: 3px outset $primaryColor;
+  color: $primaryColor;
   padding: 5px;
   border-radius: 10px;
   letter-spacing: 10px;
 }
 
 header a:focus {
-  background-color: var(--secondaryColor);
-  border: 3px outset var(--primaryColor);
-  color: var(--primaryColor);
+  background-color: $secondaryColor;
+  border: 3px outset $primaryColor;
+  color: $primaryColor;
   padding: 5px;
   border-radius: 10px;
   letter-spacing: 10px;
 }
 
 header a:active {
-  background-color: var(--activeBgColor);
+  background-color: $activeBgColor;
 }
 /* Navbar end */
 
 #head {
-  background-color: var(--boxColor);
-  border: var(--primaryBorder);
+  background-color: $boxColor;
+  border: $primaryBorder;
   margin: auto; /*second auto centers the grid*/
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
@@ -206,20 +199,18 @@ header a:active {
 }
 
 #brandName {
-  border: 1px outset transparent;
   font-size: 2rem;
   text-align: center;
   /* float: left; Taking out the three floats will fix the media media query problem */
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 #brandName:hover {
-  color: var(--headerHover);
+  color: $headerHover;
   letter-spacing: 5px;
 }
 
 #searchBar {
-  border: 1px outset transparent;
   /* font-size: 3rem; Removing this will make sure there is no spacing between buttons*/
   text-align: center;
 }
@@ -229,7 +220,6 @@ header a:active {
 }
 
 #loginBox {
-  border: 1px outset transparent;
   text-align: center;
   font-family: "Taviraj";
 }
@@ -238,10 +228,10 @@ input {
   width: 200px;
   height: 30px;
   /* background: green;  Not sure why this is here */
-  border: var(--primaryBorder);
+  border: $primaryBorder;
   border-radius: 24px;
-  color: var(--secondaryColor);
-  background-color: var(--primaryColor);
+  color: $secondaryColor;
+  background-color: $primaryColor;
   text-align: center;
   font-family: "Taviraj";
   font-size: 16px;
@@ -249,46 +239,46 @@ input {
   padding: 4px;
   margin: 7px;
   outline: none;
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
   width: 250px;
-  background-color: var(--secondaryColor);
-  border: 2px outset var(--primaryColor);
-  color: var(--primaryColor);
+  background-color: $secondaryColor;
+  border: 2px outset $primaryColor;
+  color: $primaryColor;
 }
 
 input:hover {
-  background-color: var(--secondaryColor);
-  border: 2px outset var(--primaryColor);
-  color: var(--primaryColor);
+  background-color: $secondaryColor;
+  border: 2px outset $primaryColor;
+  color: $primaryColor;
 }
 
 input[type="button"]:hover {
-  background-color: var(--secondaryColor);
-  border: 2px outset var(--primaryColor);
-  color: var(--primaryColor);
+  background-color: $secondaryColor;
+  border: 2px outset $primaryColor;
+  color: $primaryColor;
   cursor: pointer;
   letter-spacing: 5px;
 }
 
 input[type="button"]:focus {
-  background-color: var(--secondaryColor);
-  border: 2px outset var(--primaryColor);
-  color: var(--primaryColor);
+  background-color: $secondaryColor;
+  border: 2px outset $primaryColor;
+  color: $primaryColor;
   letter-spacing: 3px;
 }
 
 input[type="button"]:active {
-  background-color: var(--activeBgColor);
+  background-color: $activeBgColor;
 }
 
 #usernameDisplay {
   display: inline;
   z-index: 2;
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 #usernameDisplay:hover {
@@ -298,16 +288,16 @@ input[type="button"]:active {
 /* main */
 
 h2 {
-  border: var(--primaryBorder);
+  border: $primaryBorder;
   text-align: center;
-  background-color: var(--boxColor);
-  transition: var(--mainTransition);
+  background-color: $boxColor;
+  transition: $mainTransition;
   padding: 5px;
   letter-spacing: 10px;
 }
 
 h2:hover {
-  color: var(--headerHover);
+  color: $headerHover;
   letter-spacing: 20px;
 }
 
@@ -321,7 +311,7 @@ h2:hover {
 
 #hot a:hover,
 #electronics a:hover {
-  color: var(--primaryColor);
+  color: $primaryColor;
   /* letter-spacing: 0px; */
 }
 
@@ -346,7 +336,7 @@ h2:hover {
   border-radius: 15px;
   border: 5px outset rgb(196, 196, 196);
   position: relative;
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 .box {
@@ -362,16 +352,16 @@ h2:hover {
   padding: 10%;
   text-align: center;
   /* width: 33.3333%; */
-  border: var(--primaryBorder);
-  background: var(--boxColor);
+  border: $primaryBorder;
+  background: $boxColor;
   border-radius: 24px;
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 .box:hover {
-  background-color: var(--secondaryColor);
-  border: 5px outset var(--contrastThemeColor);
-  color: var(--primaryColor);
+  background-color: $secondaryColor;
+  border: 5px outset $contrastThemeColor;
+  color: $primaryColor;
   border-radius: 28px;
   padding: 20%;
   font-weight: 800;
@@ -380,8 +370,8 @@ h2:hover {
 }
 
 .box a {
-  /* color: var(--primaryColor); Doesnt work */
-  transition: var(--mainTransition);
+  /* color: $primaryColor; Doesnt work */
+  transition: $mainTransition;
 }
 
 .box a:focus {
@@ -403,30 +393,30 @@ h2:hover {
   min-height: 80vh;
   background: url("img/bcg-0.jpg");
   border-radius: 15px;
-  border: 5px outset var(--secondaryColor);
+  border: 5px outset $secondaryColor;
   box-shadow: 5px 10px black;
   position: relative;
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 .images:hover {
   background: url("img/bcg-0.jpg") center/cover no-repeat;
-  border: 10px outset var(--contrastThemeColor);
+  border: 10px outset $contrastThemeColor;
   padding: 1rem;
   box-shadow: 10px 15px black;
 }
 
 .btn {
   display: inline-block;
-  background: var(--primaryColor);
-  color: var(--secondaryColor);
-  border: 3px outset var(--secondaryColor);
+  background: $primaryColor;
+  color: $secondaryColor;
+  border: 3px outset $secondaryColor;
   font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 20%;
   box-shadow: 2px 5px black;
   outline: none;
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 .prevBtn {
@@ -444,18 +434,18 @@ h2:hover {
 }
 
 .btn:hover {
-  background: var(--secondaryColor);
-  color: var(--secondaryColor);
-  border: 5px outset var(--contrastThemeColor);
+  background: $secondaryColor;
+  color: $secondaryColor;
+  border: 5px outset $contrastThemeColor;
   padding: 0.7rem;
   letter-spacing: 5px;
   box-shadow: 5px 10px black;
-  color: var(--primaryColor);
+  color: $primaryColor;
   cursor: pointer;
 }
 
 .btn:active {
-  background: var(--activeBgColor);
+  background: $activeBgColor;
   box-shadow: 1px 1px black;
 }
 
@@ -464,7 +454,7 @@ h2:hover {
 footer {
   text-align: end;
   background-color: black;
-  border: var(--primaryBorder);
+  border: $primaryBorder;
 }
 
 footer span {
@@ -473,22 +463,28 @@ footer span {
 
 footer i.fab,
 i.fas {
-  border: 3px outset var(--secondaryColor);
+  border: 3px outset $secondaryColor;
   border-radius: 24px;
   width: 100%;
+}
+
+#footer_box {
+  margin: auto auto; /*second auto centers the grid*/
+  display: grid;
+  //   grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-columns: 33%;
+  grid-row-gap: 0px;
+  grid-auto-flow: column;
+  grid-template-rows: 100%;
+  //   grid-column-gap: 5%;
+  flex: auto;
 }
 
 .left_footer {
   text-align: center;
   position: relative;
-  float: left;
-  width: 33%;
-  height: 100%;
-  border: 1px outset transparent;
-  padding: 0px;
   margin: 0px auto;
-
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 .left_footer:hover {
@@ -498,35 +494,20 @@ i.fas {
 
 .center_footer {
   text-align: center;
-
   position: relative;
-  float: center;
-  width: 33%;
-  height: 100%;
-  border: 1px outset transparent;
-  padding: 0px;
   margin: 0px auto;
-
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 .center_footer:hover {
   color: blue;
-  letter-spacing: 5px;
 }
 
 .right_footer {
   text-align: center;
-
   position: relative;
-  float: right;
-  width: 33%;
-  height: 100%;
-  border: 1px outset transparent;
-  padding: 0px;
   margin: 0px auto;
-
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 .right_footer:hover {
@@ -536,7 +517,7 @@ i.fas {
 
 .copyright {
   text-align: left;
-  transition: var(--mainTransition);
+  transition: $mainTransition;
 }
 
 .copyright:hover {
@@ -586,21 +567,14 @@ i.fas {
 
   /* footer */
   #footer_box {
-    margin: auto auto; /*second auto centers the grid*/
-    display: grid;
-    grid-template-rows: repeat(3, minmax(auto, 1fr));
     grid-template-columns: 100%;
-    grid-row-gap: 0px;
-    grid-auto-flow: column;
-    /* grid-template-rows: 100%; added */
-    grid-column-gap: 5%;
-    flex: auto;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(3, minmax(auto, 1fr));
   }
 
   .left_footer,
   .center_footer,
   .right_footer {
-    border: 1px outset transparent;
     position: relative;
     float: center;
     width: 100%;
@@ -609,8 +583,11 @@ i.fas {
     margin: 0px 0px;
   }
 
+  .center_footer:hover {
+    letter-spacing: 5px;
+  }
+
   .right_footer:hover {
-    color: gray;
     letter-spacing: 5px;
   }
 }
