@@ -38,10 +38,10 @@ html {
   background-color: $primaryColor;
   color: rgb(209, 209, 209);
   font-family: "Taviraj";
-}
 
-html:hover {
-  color: $secondaryColor;
+  &:hover {
+    color: $secondaryColor;
+  }
 }
 
 hr {
@@ -58,10 +58,10 @@ hr {
   cursor: pointer;
   transition: 0.5s;
   background-color: $boxColor;
-}
 
-.navbar__btn:hover {
-  border: 7px outset $secondaryColor;
+  &:hover {
+    border: 7px outset $secondaryColor;
+  }
 }
 
 .bar1,
@@ -105,8 +105,8 @@ hr {
   top: 0;
   right: 0;
   /* text-align: center; Can move hyperlinks, but it looks nicer on the left */
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Need these */
+  height: 100%; /* */
   overflow: auto;
   z-index: 3;
   background: rgb(0, 0, 0);
@@ -122,13 +122,6 @@ hr {
 
 .showNavbar {
   transform: translateX(0);
-}
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    width: 30vw;
-    min-width: 450px;
-  }
 }
 
 .close-navbar {
@@ -147,42 +140,45 @@ nav {
   z-index: 100;
 }
 
-header a {
-  background-color: $primaryColor;
-  border: $primaryBorder;
-  border-radius: 24px;
-  text-transform: capitalize;
-  text-decoration: none;
-  color: $secondaryColor;
-  letter-spacing: 5px;
-  padding: 0px 5px;
-  margin: 0px 10px;
-  transition: $mainTransition;
-  cursor: pointer;
-  outline: none;
+header {
+  & a {
+    background-color: $primaryColor;
+    border: $primaryBorder;
+    border-radius: 24px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $secondaryColor;
+    letter-spacing: 5px;
+    padding: 0px 5px;
+    margin: 0px 10px;
+    transition: $mainTransition;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: $secondaryColor;
+      border: 3px outset $primaryColor;
+      color: $primaryColor;
+      padding: 5px;
+      border-radius: 10px;
+      letter-spacing: 10px;
+    }
+
+    &:focus {
+      background-color: $secondaryColor;
+      border: 3px outset $primaryColor;
+      color: $primaryColor;
+      padding: 5px;
+      border-radius: 10px;
+      letter-spacing: 10px;
+    }
+
+    &:active {
+      background-color: $activeBgColor;
+    }
+  }
 }
 
-header a:hover {
-  background-color: $secondaryColor;
-  border: 3px outset $primaryColor;
-  color: $primaryColor;
-  padding: 5px;
-  border-radius: 10px;
-  letter-spacing: 10px;
-}
-
-header a:focus {
-  background-color: $secondaryColor;
-  border: 3px outset $primaryColor;
-  color: $primaryColor;
-  padding: 5px;
-  border-radius: 10px;
-  letter-spacing: 10px;
-}
-
-header a:active {
-  background-color: $activeBgColor;
-}
 /* Navbar end */
 
 #head {
@@ -203,20 +199,20 @@ header a:active {
   text-align: center;
   /* float: left; Taking out the three floats will fix the media media query problem */
   transition: $mainTransition;
-}
 
-#brandName:hover {
-  color: $headerHover;
-  letter-spacing: 5px;
+  &:hover {
+    color: $headerHover;
+    letter-spacing: 5px;
+  }
 }
 
 #searchBar {
   /* font-size: 3rem; Removing this will make sure there is no spacing between buttons*/
   text-align: center;
-}
 
-#searchBar input {
-  margin: 20px;
+  & input {
+    margin: 20px;
+  }
 }
 
 #loginBox {
@@ -225,64 +221,66 @@ header a:active {
 }
 
 input {
-  width: 200px;
-  height: 30px;
-  /* background: green;  Not sure why this is here */
-  border: $primaryBorder;
-  border-radius: 24px;
-  color: $secondaryColor;
-  background-color: $primaryColor;
-  text-align: center;
-  font-family: "Taviraj";
-  font-size: 16px;
-  font-weight: 400px;
-  padding: 4px;
-  margin: 7px;
-  outline: none;
-  transition: $mainTransition;
-}
+  & {
+    width: 200px;
+    height: 30px;
+    /* background: green;  Not sure why this is here */
+    border: $primaryBorder;
+    border-radius: 24px;
+    color: $secondaryColor;
+    background-color: $primaryColor;
+    text-align: center;
+    font-family: "Taviraj";
+    font-size: 16px;
+    font-weight: 400px;
+    padding: 4px;
+    margin: 7px;
+    outline: none;
+    transition: $mainTransition;
+  }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-  width: 250px;
-  background-color: $secondaryColor;
-  border: 2px outset $primaryColor;
-  color: $primaryColor;
-}
+  &[type="text"]:focus,
+  &[type="password"]:focus {
+    width: 250px;
+    background-color: $secondaryColor;
+    border: 2px outset $primaryColor;
+    color: $primaryColor;
+  }
 
-input:hover {
-  background-color: $secondaryColor;
-  border: 2px outset $primaryColor;
-  color: $primaryColor;
-}
+  &:hover {
+    background-color: $secondaryColor;
+    border: 2px outset $primaryColor;
+    color: $primaryColor;
+  }
 
-input[type="button"]:hover {
-  background-color: $secondaryColor;
-  border: 2px outset $primaryColor;
-  color: $primaryColor;
-  cursor: pointer;
-  letter-spacing: 5px;
-}
+  &[type="button"]:hover {
+    background-color: $secondaryColor;
+    border: 2px outset $primaryColor;
+    color: $primaryColor;
+    cursor: pointer;
+    letter-spacing: 5px;
+  }
 
-input[type="button"]:focus {
-  background-color: $secondaryColor;
-  border: 2px outset $primaryColor;
-  color: $primaryColor;
-  letter-spacing: 3px;
-}
+  &[type="button"]:focus {
+    background-color: $secondaryColor;
+    border: 2px outset $primaryColor;
+    color: $primaryColor;
+    letter-spacing: 3px;
+  }
 
-input[type="button"]:active {
-  background-color: $activeBgColor;
+  &[type="button"]:active {
+    background-color: $activeBgColor;
+  }
 }
 
 #usernameDisplay {
   display: inline;
   z-index: 2;
   transition: $mainTransition;
-}
 
-#usernameDisplay:hover {
-  color: rgb(0, 177, 0);
+  &:hover {
+    color: rgb(0, 177, 0);
+  }
 }
 
 /* main */
@@ -294,11 +292,11 @@ h2 {
   transition: $mainTransition;
   padding: 5px;
   letter-spacing: 10px;
-}
 
-h2:hover {
-  color: $headerHover;
-  letter-spacing: 20px;
+  &:hover {
+    color: $headerHover;
+    letter-spacing: 20px;
+  }
 }
 
 /* Reworked grid hyperlinks */
@@ -356,28 +354,28 @@ h2:hover {
   background: $boxColor;
   border-radius: 24px;
   transition: $mainTransition;
-}
 
-.box:hover {
-  background-color: $secondaryColor;
-  border: 5px outset $contrastThemeColor;
-  color: $primaryColor;
-  border-radius: 28px;
-  padding: 20%;
-  font-weight: 800;
-  /* Makes height of grid box collide with height when hovered. */
-  /* font-size: 22px; */
+  &:hover {
+    background-color: $secondaryColor;
+    border: 5px outset $contrastThemeColor;
+    color: $primaryColor;
+    border-radius: 28px;
+    padding: 20%;
+    font-weight: 800;
+    /* Makes height of grid box collide with height when hovered. */
+    /* font-size: 22px; */
+  }
 }
 
 .box a {
   /* color: $primaryColor; Doesnt work */
   transition: $mainTransition;
-}
 
-.box a:focus {
-  /* Doesn't work */
-  /* color: black; Doesn't change font color */
-  font-size: 24px;
+  &:focus {
+    /* Doesn't work */
+    /* color: black; Doesn't change font color */
+    font-size: 24px;
+  }
 }
 
 .slider {
@@ -397,13 +395,13 @@ h2:hover {
   box-shadow: 5px 10px black;
   position: relative;
   transition: $mainTransition;
-}
 
-.images:hover {
-  background: url("img/bcg-0.jpg") center/cover no-repeat;
-  border: 10px outset $contrastThemeColor;
-  padding: 1rem;
-  box-shadow: 10px 15px black;
+  &:hover {
+    background: url("img/bcg-0.jpg") center/cover no-repeat;
+    border: 10px outset $contrastThemeColor;
+    padding: 1rem;
+    box-shadow: 10px 15px black;
+  }
 }
 
 .btn {
@@ -417,6 +415,22 @@ h2:hover {
   box-shadow: 2px 5px black;
   outline: none;
   transition: $mainTransition;
+
+  &:hover {
+    background: $secondaryColor;
+    color: $secondaryColor;
+    border: 5px outset $contrastThemeColor;
+    padding: 0.7rem;
+    letter-spacing: 5px;
+    box-shadow: 5px 10px black;
+    color: $primaryColor;
+    cursor: pointer;
+  }
+
+  &:active {
+    background: $activeBgColor;
+    box-shadow: 1px 1px black;
+  }
 }
 
 .prevBtn {
@@ -433,39 +447,23 @@ h2:hover {
   transform: translate(-75%, -50%);
 }
 
-.btn:hover {
-  background: $secondaryColor;
-  color: $secondaryColor;
-  border: 5px outset $contrastThemeColor;
-  padding: 0.7rem;
-  letter-spacing: 5px;
-  box-shadow: 5px 10px black;
-  color: $primaryColor;
-  cursor: pointer;
-}
-
-.btn:active {
-  background: $activeBgColor;
-  box-shadow: 1px 1px black;
-}
-
 /* Footer */
 
 footer {
   text-align: end;
   background-color: black;
   border: $primaryBorder;
-}
 
-footer span {
-  font-size: 3em;
-}
+  & span {
+    font-size: 3em;
+  }
 
-footer i.fab,
-i.fas {
-  border: 3px outset $secondaryColor;
-  border-radius: 24px;
-  width: 100%;
+  & i.fab,
+  & i.fas {
+    border: 3px outset $secondaryColor;
+    border-radius: 24px;
+    width: 100%;
+  }
 }
 
 #footer_box {
@@ -485,11 +483,11 @@ i.fas {
   position: relative;
   margin: 0px auto;
   transition: $mainTransition;
-}
 
-.left_footer:hover {
-  color: rgb(0, 177, 0);
-  letter-spacing: 5px;
+  &:hover {
+    color: rgb(0, 177, 0);
+    letter-spacing: 5px;
+  }
 }
 
 .center_footer {
@@ -497,10 +495,10 @@ i.fas {
   position: relative;
   margin: 0px auto;
   transition: $mainTransition;
-}
 
-.center_footer:hover {
-  color: blue;
+  &:hover {
+    color: blue;
+  }
 }
 
 .right_footer {
@@ -508,27 +506,35 @@ i.fas {
   position: relative;
   margin: 0px auto;
   transition: $mainTransition;
-}
 
-.right_footer:hover {
-  color: gray;
-  /* letter-spacing: 5px; */
+  &:hover {
+    color: gray;
+    /* letter-spacing: 5px; */
+  }
 }
 
 .copyright {
   text-align: left;
   transition: $mainTransition;
-}
 
-.copyright:hover {
-  color: white;
-  letter-spacing: 5px;
-  border: 1px outset blue;
+  &:hover {
+    color: white;
+    letter-spacing: 5px;
+    border: 1px outset blue;
+  }
 }
 
 /* Testing Media Queries */
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  /* Navbar */
+  .navbar {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   /* 768px, 1000px */
 
   /* head */
@@ -542,6 +548,11 @@ i.fas {
     /* grid-template-rows: 100%; added */
     grid-column-gap: 5%;
     flex: auto;
+  }
+
+  /* Navbar */
+  .navbar h2 {
+    margin-top: 70px;
   }
 
   /* Grid Boxes */
