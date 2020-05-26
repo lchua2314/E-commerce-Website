@@ -46,15 +46,15 @@
     margin-top: 50px;
   }
 
-  #footer_box {
+  #footer-box {
     grid-template-columns: 100%;
     grid-auto-flow: row;
     grid-template-rows: repeat(3, minmax(auto, 1fr));
   }
 
-  .left_footer,
-  .center_footer,
-  .right_footer {
+  .left-footer,
+  .center-footer,
+  .right-footer {
     position: relative;
     float: center;
     width: 100%;
@@ -63,11 +63,11 @@
     margin: 0px 0px;
   }
 
-  .center_footer:hover {
+  .center-footer:hover {
     letter-spacing: 5px;
   }
 
-  .right_footer:hover {
+  .right-footer:hover {
     letter-spacing: 5px;
   }
 }

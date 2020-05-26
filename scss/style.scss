@@ -194,7 +194,7 @@ header {
   flex: auto;
 }
 
-#brandName {
+#brand-name {
   font-size: 2rem;
   text-align: center;
   /* float: left; Taking out the three floats will fix the media media query problem */
@@ -206,7 +206,7 @@ header {
   }
 }
 
-#searchBar {
+#search-bar {
   /* font-size: 3rem; Removing this will make sure there is no spacing between buttons*/
   text-align: center;
 
@@ -215,7 +215,7 @@ header {
   }
 }
 
-#loginBox {
+#login-box {
   text-align: center;
   font-family: "Taviraj";
 }
@@ -273,7 +273,7 @@ input {
   }
 }
 
-#usernameDisplay {
+#username-display {
   display: inline;
   z-index: 2;
   transition: $mainTransition;
@@ -466,7 +466,7 @@ footer {
   }
 }
 
-#footer_box {
+#footer-box {
   margin: auto auto; /*second auto centers the grid*/
   display: grid;
   //   grid-template-columns: repeat(3, minmax(auto, 1fr));
@@ -478,7 +478,7 @@ footer {
   flex: auto;
 }
 
-.left_footer {
+.left-footer {
   text-align: center;
   position: relative;
   margin: 0px auto;
@@ -490,7 +490,7 @@ footer {
   }
 }
 
-.center_footer {
+.center-footer {
   text-align: center;
   position: relative;
   margin: 0px auto;
@@ -501,7 +501,7 @@ footer {
   }
 }
 
-.right_footer {
+.right-footer {
   text-align: center;
   position: relative;
   margin: 0px auto;

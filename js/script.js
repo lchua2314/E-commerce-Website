@@ -1,7 +1,7 @@
 // Login Interaction
-const sendBtn = document.querySelector("#loginBtn");
+const sendBtn = document.querySelector("#login-btn");
 const usernameIn = document.querySelector("#userid");
-const usernameOut = document.querySelector("#usernameDisplay");
+const usernameOut = document.querySelector("#username-display");
 const passwordIn = document.querySelector("#pswrd");
 const formJS = document.querySelector("form");
 
