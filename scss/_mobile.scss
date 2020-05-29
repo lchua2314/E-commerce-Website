@@ -36,9 +36,48 @@
   }
 
   /* Slider */
-  .prevBtn,
-  .nextBtn {
+  .btn {
+    display: inline-block;
+    background: $primaryColor;
+    color: $secondaryColor;
+    border: 3px outset $secondaryColor;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 20%;
+    box-shadow: 2px 5px black;
+    outline: none;
+    transition: $mainTransition;
+
+    &:hover {
+      background: $secondaryColor;
+      color: $secondaryColor;
+      border: 3px outset $contrastThemeColor;
+      padding: 0.5rem;
+      letter-spacing: 0px;
+      border-radius: 20%;
+      box-shadow: 2px 5px black;
+      color: $primaryColor;
+      cursor: pointer;
+    }
+
+    &:active {
+      background: $activeBgColor;
+      box-shadow: 1px 1px black;
+    }
+  }
+
+  .prevBtn {
+    position: absolute;
     top: 90%;
+    left: 0;
+    transform: translate(0%, -50%);
+  }
+
+  .nextBtn {
+    position: absolute;
+    top: 90%;
+    right: 0;
+    transform: translate(0%, -50%);
   }
 
   /* footer */
