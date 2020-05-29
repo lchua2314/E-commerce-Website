@@ -18,7 +18,7 @@ function check(form) {
     window.open(
       "https://lchua2314.github.io/Kangaroo-Rat-HTML-CSS-Project/Kangaroo%20Rat%20Folder/Kangaroo%20Rat.html"
     );
-    alert("Thanks for checking out at my code! :)");
+    alert("Thanks for looking at the code! :)");
   }
 }
 
