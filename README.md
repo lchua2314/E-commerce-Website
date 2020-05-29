@@ -1,6 +1,6 @@
 # E-commerce-Website
 
-An e-commerce website initially focusing on the vanilla frontend technologies such as HTML, CSS, and Javascript. Nevermind about future plans.
+An e-commerce website focusing on the vanilla frontend technologies such as HTML, CSS, and Javascript.
 
 # Update 5/22/2020
 
