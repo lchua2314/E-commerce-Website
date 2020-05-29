@@ -14,8 +14,10 @@ formJS.addEventListener("submit", (event) => {
 // Login info usage
 // Code is insecure, but it is here just to test the login.
 function check(form) {
-  if (form.userid.value == "dew" && form.pswrd.value == "123") {
-    window.open("https://www.youtube.com/watch?v=mJa_3IiKxFk");
+  if (form.userid.value == "Kangaroo" && form.pswrd.value == "Rat") {
+    window.open(
+      "https://lchua2314.github.io/Kangaroo-Rat-HTML-CSS-Project/Kangaroo%20Rat%20Folder/Kangaroo%20Rat.html"
+    );
     alert("Thanks for checking out at my code! :)");
   }
 }
