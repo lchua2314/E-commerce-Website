@@ -367,17 +367,6 @@ h2 {
   }
 }
 
-.box a {
-  /* color: $primaryColor; Doesnt work */
-  transition: $mainTransition;
-
-  &:focus {
-    /* Doesn't work */
-    /* color: black; Doesn't change font color */
-    font-size: 24px;
-  }
-}
-
 .slider {
   min-height: 85vh;
   display: flex;
