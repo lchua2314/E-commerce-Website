@@ -81,6 +81,7 @@ function prevSlide() {
 
 const navbar = document.querySelector(".navbar");
 const navbarBtn = document.querySelector(".navbar__btn");
+const hyperLink = document.querySelector(".navbar-content");
 const navbarOverlay = document.querySelector(".navbar-overlay");
 
 navbarBtn.addEventListener("click", function () {
@@ -93,4 +94,10 @@ navbarBtn.addEventListener("click", function () {
     navbarOverlay.classList.add("transparentBcg");
     navbarBtn.classList.add("change");
   }
+});
+
+hyperLink.addEventListener("click", function () {
+  navbar.classList.remove("showNavbar");
+  navbarOverlay.classList.remove("transparentBcg");
+  navbarBtn.classList.remove("change");
 });

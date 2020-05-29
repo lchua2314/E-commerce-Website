@@ -25,6 +25,23 @@
   }
 
   /* Navbar */
+
+  .navbar__btn {
+    border: 5px outset $secondaryColor;
+
+    &:hover {
+      border: 5px outset $secondaryColor;
+    }
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 5px;
+    margin: 0.5rem;
+  }
+
   .navbar h2 {
     margin-top: 70px;
   }
